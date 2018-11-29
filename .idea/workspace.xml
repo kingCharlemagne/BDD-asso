@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b13725-b540-49af-a6a0-7ebd09231a5b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscription.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listeApprenant.php" beforeDir="false" afterPath="$PROJECT_DIR$/listeApprenant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listeAteliers.php" beforeDir="false" afterPath="$PROJECT_DIR$/listeAteliers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/traitement/listApprenant_traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/traitement/listeAtelier_traitement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inscriptionCours.php" beforeDir="false" afterPath="$PROJECT_DIR$/inscriptionCours.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,11 +27,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="listeApprenant.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listeApprenant.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listeApprenant.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="61" column="86" selection-start-line="61" selection-start-column="86" selection-end-line="61" selection-end-column="86" />
+            <state relative-caret-position="277">
+              <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inscriptionCours.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inscriptionCours.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inscription.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inscription.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1393">
+              <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -63,6 +76,7 @@
         <option value="$PROJECT_DIR$/php/traitement/listeApprenant_traitement.php" />
         <option value="$PROJECT_DIR$/inscription.php" />
         <option value="$PROJECT_DIR$/listeApprenant.php" />
+        <option value="$PROJECT_DIR$/inscriptionCours.php" />
       </list>
     </option>
   </component>
@@ -101,12 +115,6 @@
               <item name="bdd-asso" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="bdd-asso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bdd-asso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="traitement" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -140,12 +148,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543420254402</updated>
-      <workItem from="1543420255745" duration="16912000" />
+      <workItem from="1543420255745" duration="22522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16912000" />
+    <option name="totallyTimeSpent" value="22522000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -167,7 +175,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24939272" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" weight="0.32955465" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -213,6 +221,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/traitement/inscription_traitement.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1393">
+          <caret line="97" column="36" selection-start-line="97" selection-start-column="36" selection-end-line="97" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/traitement/listeApprenant_traitement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -220,20 +238,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inscription.php">
+    <entry file="file://$PROJECT_DIR$/listeApprenant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="126" column="87" selection-start-line="126" selection-start-column="87" selection-end-line="126" selection-end-column="87" />
+        <state relative-caret-position="277">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/traitement/inscription_traitement.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/listeApprenant.php">
+    <entry file="file://D:/Codage/code/Cour_philomathique/Front_End/Javascript/Ajax/moteur_de_recherche_ajax/Correction/exercice/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="61" column="86" selection-start-line="61" selection-start-column="86" selection-end-line="61" selection-end-column="86" />
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Codage/code/Cour_philomathique/Front_End/Javascript/Ajax/moteur_de_recherche_ajax/Correction/exercice/ajax/rechercheParTitre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscriptionCours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
         </state>
       </provider>
     </entry>
