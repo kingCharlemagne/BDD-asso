@@ -124,7 +124,7 @@ include 'php/traitement/inscription_traitement.php';
 
                             <div class="input-group mb-3 mt-2">
                                 <div class="input-group-prepend">
-                                    <label class="input-group-text" for="status">Status</label>
+                                    <label class="input-group-text" for="status">Statut</label>
                                 </div>
                                 <select class="custom-select" id="status" name="status">
                                     <option selected>Sélectionner</option>
@@ -140,7 +140,7 @@ include 'php/traitement/inscription_traitement.php';
                                     <input type="text" class="form-control" name="nativeCountry" id="nativeCountry">
                                 </div>
                                 <div class="col">
-                                    <label for="nationality">Nationalité</label>
+                                    <label for="nationality">Nationalitée</label>
                                     <input type="text" class="form-control" name="nationality" id="nationality">
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ include 'php/traitement/inscription_traitement.php';
                                            id="maternalLanguage">
                                 </div>
                                 <div class="col">
-                                    <label for="secondLanguage">Seconde langue</label>
+                                    <label for="secondLanguage">Langue secondaire</label>
                                     <input type="text" class="form-control" name="secondLanguage" id="secondLanguage">
                                 </div>
                             </div>

@@ -1,5 +1,5 @@
 <?php
-require 'php/traitement/listApprenant_traitement.php'
+require 'php/traitement/listeApprenant_traitement.php'
 ?>
 <!doctype html>
 <html lang="en">
@@ -10,60 +10,122 @@ require 'php/traitement/listApprenant_traitement.php'
 </head>
 <body>
 <header>
-        <?php include 'php/navbar.php'?>
+    <?php include 'php/navbar.php' ?>
 </header>
 
 <section class="mt-4">
     <div class="row">
-        <table class="table" style="overflow:scroll;">
-            <thead class="thead-light text-center">
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Genre</th>
-                <th scope="col">Nom</th>
-                <th scope="col">Prenom</th>
-                <th scope="col">Adresse</th>
-                <th scope="col">Code Postal</th>
-                <th scope="col">Ville</th>
-                <th scope="col">Date de naissance</th>
-                <th scope="col">Téléphone</th>
-                <th scope="col">E-mail</th>
-                <th scope="col">Situation familiale</th>
-                <th scope="col">Enfants</th>
-                <th scope="col">Status</th>
-                <th scope="col">Pays</th>
-                <th scope="col">Nationalité</th>
-                <th scope="col">Date d'arriver</th>
-                <th scope="col">Langue maternelle</th>
-                <th scope="col">Date d'inscription</th>
-            </thead>
-            <tbody>
-            <?php foreach ($datas as $data){ ?>
-            <tr>
-                <th scope="row"><?php echo $data['id'] ?></th>
-                <td><?= $data['sex'] ?></td>
-                <td><?= $data['nam'] ?></td>
-                <td><?= $data['surname'] ?></td>
-                <td><?= $data['address'] ?></td>
-                <td><?= $data['cp'] ?></td>
-                <td><?= $data['city'] ?></td>
-                <td><?= $data['born'] ?></td>
-                <td><?= $data['phone'] ?></td>
-                <td><?= $data['email'] ?></td>
-                <td><?= $data['relation'] ?></td>
-                <td><?= $data['child'] ?></td>
-                <td><?= $data['status'] ?></td>
-                <td><?= $data['country'] ?></td>
-                <td><?= $data['nationality'] ?></td>
-                <td><?= $data['arrived'] ?></td>
-                <td><?= $data['firstlanguage'] ?></td>
-                <td><?= $data['create_at'] ?></td>
-            </tr>
-            <?php }?>
-            </tbody>
-        </table>
+        <div class="col-10">
+            <div class="accordion" id="accordionExample">
+                <?php foreach ($selecDatas as $data) { ?>
+
+                    <div class="card mt-3">
+                        <div class="card-header" id="<?= $data['id'] ?>">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <h6>Identifiant</h6>
+                                            <p><?= $data['id'] ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9 ">
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <p>Nom: <?= $data['nam'] ?></p>
+                                        </div>
+                                        <div class="col">
+                                            <p>Prénom: <?= $data['surname'] ?></p>
+                                        </div>
+                                        <div class="col">
+                                            <p>Date de naissance: <?= $data['born'] ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <p>Téléphone: <?= $data['phone'] ?></p>
+                                        </div>
+                                        <div class="col">
+                                            <p>E-mail: <?= $data['email'] ?></p>
+                                        </div>
+                                        <div class="col">
+                                            <p>Date d'inscription: <?= $data['create_at'] ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="row text-center">
+                                        <div class="col">
+                                            <button class="btn btn-link" type="button" data-toggle="collapse"
+                                                    data-target="#<?= $data['nam'] ?>" aria-expanded="true"
+                                                    aria-controls="<?= $data['nam'] ?>">
+                                                détail
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="<?= $data['nam'] ?>" class="collapse" aria-labelledby="<?= $data['id'] ?>"
+                             data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Adresse: <?= $data['address'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Ville: <?= $data['city'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Code Postal: <?= $data['cp'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Date d'arriver en france: <?= $data['arrived'] ?></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Sexe: <?= $data['sex'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Situation familiale: <?= $data['relation'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Nombre d'enfant: <?= $data['child'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Statut: <?= $data['status'] ?></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Pays d'origine: <?= $data['country'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Nationalitée: <?= $data['nationality'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Langue maternelle: <?= $data['firstlanguage'] ?></p>
+                                    </div>
+                                    <div class="col">
+                                        <p>Langue secondaire: <?= $data['secondlanguage'] ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="col-2">
+            <?php include 'php/navSlide.php' ?>
+        </div>
     </div>
 </section>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

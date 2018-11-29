@@ -1,6 +1,6 @@
 <?php
 require 'php/traitement/modalAjout_traitement.php';
-require 'php/traitement/listApprenant_traitement.php';
+require 'php/traitement/listeAtelier_traitement.php';
 ?>
 
 <!doctype html>
@@ -93,7 +93,7 @@ require 'php/traitement/listApprenant_traitement.php';
                                                 <td><?= $data['horaire_debut'] ?></td>
                                                 <td><?= $data['horaire_fin'] ?></td>
                                                 <td><?= $data['effectif'] ?></td>
-                                                <td><button onclick="etat(<?= $i?>)" type="button" data-status="0" class="btn btn-success etat">OK</button></td>
+                                                <td><button onclick="etat(<?=$i?>)" type="button" data-bonus="" data-status="0" class="btn btn-success etat">OK</button></td>
                                                 <td><?= $data['benevole'] ?></td>
                                                 <td><?= $data['remplacent'] ?></td>
                                                 <td>option</td>
@@ -118,13 +118,13 @@ require 'php/traitement/listApprenant_traitement.php';
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <?php foreach ($MAdatas as $data) { ?>
+                                        <?php foreach ($MAdatas as $i => $data) { ?>
                                             <tr>
                                                 <th scope="row"><?= $data['atelier'] ?></th>
                                                 <td><?= $data['horaire_debut'] ?></td>
                                                 <td><?= $data['horaire_fin'] ?></td>
                                                 <td><?= $data['effectif'] ?></td>
-                                                <td><?= $data['etat'] ?></td>
+                                                <td><button onclick="etat(<?=$i?>)" type="button" data-status="0" class="btn btn-success etat">OK</button></td>
                                                 <td><?= $data['benevole'] ?></td>
                                                 <td><?= $data['remplacent'] ?></td>
                                                 <td>option</td>
