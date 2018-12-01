@@ -16,23 +16,3 @@ function etat(i) {
         btn[i].setAttribute("data-status","0")
     }
 }
-
-function selectLevel() {
-    let level=document.getElementById('level').value;
-    let blockAlpha=document.getElementById('lessonAlpha');
-    let blockInt=document.getElementById('lessonIntermediaire');
-    let blockDeb=document.getElementById('lessonDebutant');
-
-    blockAlpha.style.display="none";
-    blockInt.style.display="none";
-    blockDeb.style.display="none";
-
-    if (level==='1') {
-        blockAlpha.style.display="block";
-    }else if (level==='2'){
-        blockInt.style.display="block";
-    }else if (level==='3'){
-        blockDeb.style.display="block";
-    }
-    console.log(level);
-}

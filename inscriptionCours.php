@@ -25,9 +25,9 @@ require 'php/traitement/inscriptionCours_traitement.php'
                     </div>
                     <select class="custom-select" id="level" name="level">
                         <option selected>Choose...</option>
-                        <option onclick="" value="1">Alpha</option>
-                        <option value="2">Intermédiaire</option>
-                        <option value="3">Débutant</option>
+                        <option onclick="selectLevel(1)">Alpha</option>
+                        <option onclick="selectLevel(2)">Intermédiaire</option>
+                        <option onclick="selectLevel(3)">Débutant</option>
                     </select>
                 </div>
                 <form action="" method="post">
@@ -201,7 +201,31 @@ require 'php/traitement/inscriptionCours_traitement.php'
     </div>
 </section>
 
-<script src="js/function.js"></script>
+<script>
+    let blockAlpha = document.getElementById('lessonAlpha');
+    let blockInt = document.getElementById('lessonIntermediaire');
+    let blockDeb = document.getElementById('lessonDebutant');
+
+    blockAlpha.style.display = "none";
+    blockInt.style.display = "none";
+    blockDeb.style.display = "none";
+
+    function selectLevel(id) {
+        if (id === 1) {
+            blockAlpha.style.display = "block";
+            blockInt.style.display = "none";
+            blockDeb.style.display = "none";
+        } else if (id === 2) {
+            blockInt.style.display = "block";
+            blockAlpha.style.display = "none";
+            blockDeb.style.display = "none";
+        } else if (id === 3) {
+            blockDeb.style.display = "block";
+            blockAlpha.style.display = "none";
+            blockInt.style.display = "none";
+        }
+    }
+</script>
 
 </body>
 </html>
