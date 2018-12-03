@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'php/traitement/inscriptionCours_traitement.php'
 ?>
 
@@ -13,9 +14,17 @@ require 'php/traitement/inscriptionCours_traitement.php'
 <header>
     <?php include 'php/navbar.php' ?>
 </header>
-
+<?php if (!empty($errors)) { ?>
+    <div class="alert alert-danger col-12 text-center" role="alert">
+        liste des erreurs :
+        <?php foreach ($errors as $error) {
+            echo $error ?>
+            |
+        <?php } ?>
+    </div>
+<?php } ?>
 <section class="mt-4">
-    <div class="row offset-2 col-8 offset-2">
+    <div class="row offset-2 col-8 offset-2 justify-content-center">
         <div class="card">
             <h5 class="card-header text-center">Inscription cours</h5>
             <div class="card-body">
@@ -23,179 +32,174 @@ require 'php/traitement/inscriptionCours_traitement.php'
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="level">Niveau</label>
                     </div>
-                    <select class="custom-select" id="level" name="level">
+                    <select class="custom-select text-uppercase text-center" id="level" name="level">
                         <option selected>Choose...</option>
                         <option onclick="selectLevel(1)">Alpha</option>
                         <option onclick="selectLevel(2)">Intermédiaire</option>
                         <option onclick="selectLevel(3)">Débutant</option>
                     </select>
                 </div>
-                <form action="" method="post">
-                    <div id="lessonAlpha">
+                <div id="lessonAlpha">
+                    <form action="" method="post">
                         alpha
                         <div class="row">
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonOneAlpha">Première atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonOneAlpha" name="lessonOneAlpha">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($alphaDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonOneAlpha">Première atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonOneAlpha" name="lessonOne">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($alphaDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonTwoAlpha">Second atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonTwoAlpha" name="lessonTwoAlpha">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($alphaDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonTwoAlpha">Second atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonTwoAlpha" name="lessonTwo">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($alphaDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonThreeAlpha">Troisième atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonThreeAlpha" name="lessonThreeAlpha">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($alphaDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonThreeAlpha">Troisième atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonThreeAlpha" name="lessonThree">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($alphaDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <div id="lessonIntermediaire">
+                        <div class=" row justify-content-center">
+                            <button type="submit" class="btn btn-success">Enregistrer</button>
+                        </div>
+                    </form>
+                </div>
+                <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <div id="lessonIntermediaire">
+                    <form action="" method="post">
                         int
                         <div class="row">
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonOneIntermediaire">Première
-                                            atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonOneIntermediaire"
-                                            name="lessonOneIntermediaire">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($intermediaireDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonOneIntermediaire">Première
+                                        atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonOneIntermediaire"
+                                        name="lessonOne">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($intermediaireDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonTwoIntermediaire">Second
-                                            atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonTwoIntermediaire"
-                                            name="lessonTwoIntermediaire">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($intermediaireDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonTwoIntermediaire">Second
+                                        atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonTwoIntermediaire"
+                                        name="lessonTwo">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($intermediaireDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonThreeIntermediaire">Troisième
-                                            atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonThreeIntermediaire"
-                                            name="lessonThreeIntermediaire">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($intermediaireDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonThreeIntermediaire">Troisième
+                                        atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonThreeIntermediaire"
+                                        name="lessonThree">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($intermediaireDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                    <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-                    <div id="lessonDebutant">
+                        <div class=" row justify-content-center">
+                            <button type="submit" class="btn btn-success">Enregistrer</button>
+                        </div>
+                    </form>
+                </div>
+                <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                <div id="lessonDebutant">
+                    <form action="" method="post">
                         deb
                         <div class="row">
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonOneDebutant">Première
-                                            atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonOneDebutant"
-                                            name="lessonOneDebutant">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($debutantDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonOneDebutant">Première
+                                        atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonOneDebutant"
+                                        name="lessonOne">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($debutantDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonTwoDebutant">Second
-                                            atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonTwoDebutant"
-                                            name="lessonTwoDebutant">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($debutantDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonTwoDebutant">Second
+                                        atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonTwoDebutant"
+                                        name="lessonTwo">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($debutantDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
-                            <div class="col">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <label class="input-group-text" for="lessonThreeDebutant">Troisième
-                                            atelier</label>
-                                    </div>
-                                    <select class="custom-select" id="lessonThreeDebutant"
-                                            name="lessonThreeDebutant">
-                                        <option selected>Choose...</option>
-                                        <?php foreach ($debutantDatas as $data) { ?>
-                                            <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                                | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                                -<?= $data['horaire_fin'] ?> </option>
-                                        <?php } ?>
-                                    </select>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="lessonThreeDebutant">Troisième
+                                        atelier</label>
                                 </div>
+                                <select class="custom-select" id="lessonThreeDebutant"
+                                        name="lessonThree">
+                                    <option selected>Choose...</option>
+                                    <?php foreach ($debutantDatas as $data) { ?>
+                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
+                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
+                                            -<?= $data['horaire_fin'] ?> </option>
+                                    <?php } ?>
+                                </select>
                             </div>
                         </div>
-                    </div>
-                </form>
+                        <div class=" row justify-content-center">
+                            <button type="submit" class="btn btn-success">Enregistrer</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
