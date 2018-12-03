@@ -29,10 +29,9 @@ include 'php/traitement/inscription_traitement.php';
                     </div>
                 <?php } ?>
                 <div class="card border-dark mb-3">
-                    <div class="card-header text-center">Formulaire d'inscription</div>
+                    <div class="card-header text-center">Inscription 1/2</div>
                     <div class="card-body text-dark">
                         <form action="" method="post">
-
                             <!--genre-->
                             <div>
                                 <div class="form-check form-check-inline">

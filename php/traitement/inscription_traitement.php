@@ -105,12 +105,7 @@ if (!empty($_POST) AND isset($_POST)){
 
     //secondLanguage
 
-    //atelier
-    if($post['atelier'] === "Sélectionner"){
-        $errors[]='Champ Status vide, sélectionner un atelier';
-    }
-
-
+    
     //Pas d'erreurs
     if (empty($errors)){
         $inscriptionFirstStep=$bdd->prepare('INSERT INTO apprenant ( sex, nam, surname, address, cp, city, born, phone, email, relation, child, status, country, nationality, arrived, firstlanguage,create_at) VALUES (:sex,:nam,:surname,:address,:cp,:city,:born,:tel,:mail,:relation,:child,:status,:country,:nationality,:arrived,:firstlanguage,:create_at)');
