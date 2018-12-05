@@ -14,7 +14,15 @@ require 'php/traitement/listeAtelier_traitement.php';
 <header>
     <?php include 'php/navbar.php' ?>
 </header>
-
+<?php if (!empty($errors) AND isset($errors)) { ?>
+    <div class="alert alert-danger col-12 text-center" role="alert">
+        liste des erreurs :
+        <?php foreach ($errors as $error) {
+            echo $error ?>
+            |
+        <?php } ?>
+    </div>
+<?php } ?>
 <section class="mt-4">
     <div class="row">
         <div class="col-10 ">
