@@ -13,6 +13,7 @@ if (!empty($_POST) AND isset($_POST)){
     }
 
     //Condition des inputs
+
     //genre
     if(empty($post['genre']) OR !isset($post['genre'])){
         $errors[]='Champ Sexe vide';
@@ -28,10 +29,6 @@ if (!empty($_POST) AND isset($_POST)){
         $errors[]='Champ Prénom vide';
     }
 
-    //address
-    if(empty($post['address']) OR !isset($post['address'])){
-        $errors[]='Champ Adresse vide';
-    }
 
     //cp
     if(empty($post['cp']) OR !isset($post['cp'])){
@@ -51,17 +48,15 @@ if (!empty($_POST) AND isset($_POST)){
     }
 
     //tel
-    if(empty($post['tel']) OR !isset($post['tel'])){
-        $errors[]='Champ Téléphone vide';
-    }elseif (!is_numeric($post['tel']) OR strlen($post['tel'])<4 OR strlen($post['tel'])>20){
-        $errors[]='Champ Téléphone invalide, saisir un numéros de téléphone valide';
+    if (isset($post['tel']) AND !empty($post['tel'])){
+        if (!is_numeric($post['tel']) OR strlen($post['tel'])<4 OR strlen($post['tel'])>20){
+            $errors[]='Champ Téléphone invalide, saisir un numéros de téléphone valide';
+        }
     }
 
     //email
-    if (isset($post['mail'])){
-        if (!filter_var($post['mail'], FILTER_VALIDATE_EMAIL)){
+    if (isset($post['mail']) AND !empty($post['mail']) AND !filter_var($post['mail'], FILTER_VALIDATE_EMAIL)){
             $errors[]='Champ Adresse E-mail invalide, saisir un E-mail valide';
-        }
     }
 
     //familySituation
@@ -70,9 +65,7 @@ if (!empty($_POST) AND isset($_POST)){
     }
 
     //numbChild
-    if(empty($post['numbChild']) OR !isset($post['numbChild'])){
-        $errors[]='Champ nombre d\'enfants vide';
-    }elseif (!is_numeric($post['numbChild'])){
+    if (!is_numeric($post['numbChild'])){
         $errors[]='Champ nombre d\'enfants invalide, saisir un nombre';
     }
 
@@ -103,12 +96,9 @@ if (!empty($_POST) AND isset($_POST)){
         $errors[]='Champ Langue maternelle vide';
     }
 
-    //secondLanguage
-
-    
     //Pas d'erreurs
     if (empty($errors)){
-        $inscriptionFirstStep=$bdd->prepare('INSERT INTO apprenant ( sex, nam, surname, address, cp, city, born, phone, email, relation, child, status, country, nationality, arrived, firstlanguage,create_at) VALUES (:sex,:nam,:surname,:address,:cp,:city,:born,:tel,:mail,:relation,:child,:status,:country,:nationality,:arrived,:firstlanguage,:create_at)');
+        $inscriptionFirstStep=$bdd->prepare('INSERT INTO apprenant ( sex, nam, surname, address, cp, city, born, phone, email, relation, child, status, country, nationality, arrived, firstlanguage, secondlanguage, create_at) VALUES (:sex,:nam,:surname,:address,:cp,:city,:born,:tel,:mail,:relation,:child,:status,:country,:nationality,:arrived,:firstlanguage,:secondlanguage,:create_at)');
         $inscriptionFirstStep->bindValue(':sex',$post['genre']);
         $inscriptionFirstStep->bindValue(':nam',$post['name']);
         $inscriptionFirstStep->bindValue(':surname',$post['surname']);
@@ -125,12 +115,13 @@ if (!empty($_POST) AND isset($_POST)){
         $inscriptionFirstStep->bindValue(':nationality',$post['nationality']);
         $inscriptionFirstStep->bindValue(':arrived',$post['arrived']);
         $inscriptionFirstStep->bindValue(':firstlanguage',$post['maternalLanguage']);
+        $inscriptionFirstStep->bindValue(':secondlanguage',$post['secondLanguage']);
         $inscriptionFirstStep->bindValue(':create_at',date('Y-m-d'));
         if ($inscriptionFirstStep->execute()){
             $_SESSION['id_student']= $bdd->lastInsertId();
             header('Location: inscriptionCours.php');
         }else{
-            $errors[]="Une erreur est survenue l'or de l'enregistrement des données, ressayer ou contacter le webmaster" ;
+            $errors[]="Une erreur est survenue l'or de l'enregistrement des données, ressayer où contacter le webmaster" ;
         }
 
     }

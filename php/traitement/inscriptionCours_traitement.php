@@ -17,14 +17,14 @@ $debutantDatas=$selectDebutant->fetchAll();
 //Insert
 if (!empty($_POST) AND isset($_POST)){
     $errors=[];
-
-    if(empty($_POST['lessonOne']) OR !isset($_POST['lessonOne'])){
+    var_dump($_POST);
+    if(empty($_POST['lessonOne']) OR !isset($_POST['lessonOne']) OR $_POST['lessonOne']==="Sélectionner"){
         $errors[]='Champ Première atelier vide';
     }
-    if(empty($_POST['lessonTwo']) OR !isset($_POST['lessonTwo'])){
+    if(empty($_POST['lessonTwo']) OR !isset($_POST['lessonTwo']) OR $_POST['lessonOne']==="Sélectionner"){
         $errors[]='Champ Second atelier vide';
     }
-    if(empty($_POST['lessonThree']) OR !isset($_POST['lessonOne'])){
+    if(empty($_POST['lessonThree']) OR !isset($_POST['lessonOne']) OR $_POST['lessonOne']==="Sélectionner"){
         $errors[]='Champ Troisième atelier vide';
     }
 
@@ -38,6 +38,8 @@ if (!empty($_POST) AND isset($_POST)){
 
     if(empty($_POST['receved']) OR !isset($_POST['receved'])){
         $errors[]='Champ N°de Reçu vide';
+    }elseif (!is_numeric($_POST['receved'])){
+        $errors[]='Champ N°de Reçu vide invalide, saisir N°de Reçu vide valide';
     }
 
 

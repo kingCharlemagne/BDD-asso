@@ -33,7 +33,7 @@ require 'php/traitement/inscriptionCours_traitement.php'
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="level">Niveau</label>
                     </div>
-                    <select class="custom-select text-uppercase text-center" id="level" name="level">
+                    <select class="custom-select text-uppercase text-center" id="level" name="level" required>
                         <option selected>Sélectionner le niveau</option>
                         <option onclick="selectLevel(1)">Alpha</option>
                         <option onclick="selectLevel(2)">Intermédiaire</option>

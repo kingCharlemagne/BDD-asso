@@ -40,10 +40,6 @@ if (!empty($_POST) AND isset($_POST)){
         $errors[]='Champ lieu vide, saisir une valeur';
     }
 
-    //remplacent
-    if(empty($post['remplacent']) OR !isset($post['remplacent'])){
-        $errors[]='Champ lieu vide, saisir une valeur';
-    }
 
     if (empty($errors)){
         $insertAtelier=$bdd->prepare('INSERT INTO ateliers(categorie,jour, atelier, horaire_debut, horaire_fin, benevole, remplacent) VALUES (:categorie, :jour,:atelier,:horaireDebut,:horaireFin,:benevole,:remplacent)');

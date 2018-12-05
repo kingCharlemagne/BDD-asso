@@ -30,22 +30,22 @@
                     </select>
 
                     <label for="atelier">Atelier</label>
-                    <input type="text" class="form-control" id="atelier" name="atelier">
+                    <input type="text" class="form-control" id="atelier" name="atelier" required>
 
                     <div class="row">
                         <div class="col">
                             <label for="horaireStart">Horaire de début</label>
-                            <input type="time" class="form-control" id="horaireStart" name="horaireStart">
+                            <input type="time" class="form-control" id="horaireStart" name="horaireStart" required>
                         </div>
                         <div class="col">
                             <label for="horaireEnd">Horaire de fin</label>
-                            <input type="time" class="form-control" id="horaireEnd" name="horaireEnd">
+                            <input type="time" class="form-control" id="horaireEnd" name="horaireEnd" required>
                         </div>
                     </div>
 
 
                     <label for="benevole">Bénévole</label>
-                    <input type="text" class="form-control" id="benevole" name="benevole">
+                    <input type="text" class="form-control" id="benevole" name="benevole" required>
 
                     <label for="remplacent">Remplaçant</label>
                     <input type="text" class="form-control" id="remplacent" name="remplacent">

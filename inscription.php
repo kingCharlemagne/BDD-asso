@@ -49,11 +49,11 @@ include 'php/traitement/inscription_traitement.php';
                             <div class="row mt-2">
                                 <div class="col">
                                     <label for="name">Nom</label>
-                                    <input type="text" name="name" class="form-control text-uppercase" id="name">
+                                    <input type="text" name="name" class="form-control text-uppercase" id="name" required>
                                 </div>
                                 <div class="col">
                                     <label for="surname">Prénom</label>
-                                    <input type="text" name="surname" class="form-control" id="surname">
+                                    <input type="text" name="surname" class="form-control" id="surname" required>
                                 </div>
                             </div>
 
@@ -67,18 +67,18 @@ include 'php/traitement/inscription_traitement.php';
                             <div class="row mt-2">
                                 <div class="col">
                                     <label for="cp">Code postal</label>
-                                    <input type="text" class="form-control" name="cp" id="cp">
+                                    <input type="text" class="form-control" name="cp" id="cp" required>
                                 </div>
                                 <div class="col">
                                     <label for="city">Ville</label>
-                                    <input type="text" class="form-control" name="city" id="city">
+                                    <input type="text" class="form-control" name="city" id="city" required>
                                 </div>
                             </div>
 
                             <div class="row mt-2">
                                 <div class="col">
                                     <label for="bornDate">Date de naissance</label>
-                                    <input type="date" class="form-control" name="bornDate" id="bornDate">
+                                    <input type="date" class="form-control" name="bornDate" id="bornDate" required>
                                 </div>
                                 <div class="col">
                                     <label for="tel">Téléphone</label>
@@ -96,17 +96,17 @@ include 'php/traitement/inscription_traitement.php';
                                     <div>Situation familiale</div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="familySituation" id="marie"
-                                               value="marie">
+                                               value="marié">
                                         <label class="form-check-label" for="marier">M</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="familySituation" id="celib"
-                                               value="celibataire">
-                                        <label class="form-check-label" for="celib">Célib</label>
+                                               value="célibataire">
+                                        <label class="form-check-label" for="célib">Célib</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="familySituation" id="div"
-                                               value="divorce">
+                                               value="divorcé">
                                         <label class="form-check-label" for="divorcer">Div</label>
                                     </div>
                                     <div class="form-check form-check-inline">
@@ -117,7 +117,7 @@ include 'php/traitement/inscription_traitement.php';
                                 </div>
                                 <div class="col">
                                     <label for="numbChild">Nombre d'enfants à charge</label>
-                                    <input type="number" class="form-control" name="numbChild" id="numbChild">
+                                    <input type="text" class="form-control" name="numbChild" id="numbChild" required>
                                 </div>
                             </div>
 
@@ -125,7 +125,7 @@ include 'php/traitement/inscription_traitement.php';
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" for="status">Statut</label>
                                 </div>
-                                <select class="custom-select" id="status" name="status">
+                                <select class="custom-select" id="status" name="status" required>
                                     <option selected>Sélectionner</option>
                                     <option value="employer">Employer</option>
                                     <option value="chômage">Chômeur</option>
@@ -136,24 +136,24 @@ include 'php/traitement/inscription_traitement.php';
                             <div class="row mt-2">
                                 <div class="col">
                                     <label for="nativeContry">Pays d'origine</label>
-                                    <input type="text" class="form-control" name="nativeCountry" id="nativeCountry">
+                                    <input type="text" class="form-control" name="nativeCountry" id="nativeCountry" required>
                                 </div>
                                 <div class="col">
                                     <label for="nationality">Nationalitée</label>
-                                    <input type="text" class="form-control" name="nationality" id="nationality">
+                                    <input type="text" class="form-control" name="nationality" id="nationality" required>
                                 </div>
                             </div>
 
                             <div class="form-group mt-2">
                                 <label for="arrived">Date d'arrivée en France</label>
-                                <input type="date" class="form-control" name="arrived" id="arrived">
+                                <input type="date" class="form-control" name="arrived" id="arrived" required>
                             </div>
 
                             <div class="row mt-2">
                                 <div class="col">
                                     <label for="maternalLanguage">Langue maternelle</label>
                                     <input type="text" class="form-control" name="maternalLanguage"
-                                           id="maternalLanguage">
+                                           id="maternalLanguage" required>
                                 </div>
                                 <div class="col">
                                     <label for="secondLanguage">Langue secondaire</label>
