@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'php/traitement/recherche_traitement.php'
 ?>
 
 <!doctype html>
@@ -13,11 +14,9 @@ session_start();
 <header>
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="index.php">
-            <button type="button" class="btn btn-light"><img src="img/accueil-50.png" width="30" height="30"
-                                                             class="d-inline-block align-top" alt=""></button>
+            <button type="button" class="btn btn-light"><img src="img/accueil-50.png" width="30" height="30" class="d-inline-block align-top" alt=""></button>
             Accueil
         </a>
-
     </nav>
 </header>
 
@@ -25,14 +24,28 @@ session_start();
     <div class="row">
         <div class="col-9">
             <nav class="navbar navbar-light bg-light justify-content-center">
-                <form class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <form class="form-inline" method="get">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="selectCategorie">Choisir le type de recherche</label>
+                        <select class="custom-select mr-sm-2 text-center" id="selectCategorie" name="selectCategorie">
+                            <option value="0" selected>Nom</option>
+                            <option value="1">Prénom</option>
+                            <option value="2">Id</option>
+                            <option value="3">Date de naissance</option>
+                            <option value="4">Téléphone</option>
+                        </select>
+                    </div>
+                    <input class="form-control mr-sm-2" type="search" name="search" aria-label="Search" required>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
                 </form>
+                <a class="ml-4" href="#" data-toggle="modal" data-target="#advancedSearch">Recherche avancée</a>
+                <?php require 'php/modal/modal_recherche avance.php'?>
             </nav>
 
-            <div class="">
-
+            <div id="dataResult">
+                <?php foreach ($results as $data){
+                    require 'php/dataResult_model.php';
+                }?>
             </div>
         </div>
         <div class="col-3">
@@ -40,7 +53,10 @@ session_start();
         </div>
     </div>
 </section>
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
 

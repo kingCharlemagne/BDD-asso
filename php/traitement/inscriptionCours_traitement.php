@@ -17,7 +17,6 @@ $debutantDatas=$selectDebutant->fetchAll();
 //Insert
 if (!empty($_POST) AND isset($_POST)){
     $errors=[];
-    var_dump($_POST);
     if(empty($_POST['lessonOne']) OR !isset($_POST['lessonOne']) OR $_POST['lessonOne']==="Sélectionner"){
         $errors[]='Champ Première atelier vide';
     }
