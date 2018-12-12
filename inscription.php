@@ -123,7 +123,7 @@ include 'php/traitement/inscription_traitement.php';
 
                             <div class="input-group mb-3 mt-2">
                                 <div class="input-group-prepend">
-                                    <label class="input-group-text" for="status">Statut</label>
+                                    <label class="input-group-text" for="status">Statut social</label>
                                 </div>
                                 <select class="custom-select" id="status" name="status" required>
                                     <option selected>Sélectionner</option>

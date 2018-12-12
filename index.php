@@ -55,6 +55,15 @@ session_start();
             </div>
         </div>
 
+        <div class="card text-white bg-success mb-3" style="width: 18rem;">
+            <div class="card-header">Statistiques</div>
+            <div class="card-body">
+                <img src="img/statistics-50.png" width="40" height="40" alt="icone statistique">
+                <br>
+                <a class="btn btn-outline-light mt-2" href="statistique.php">Consulter</a>
+            </div>
+        </div>
+
     </div>
 </section>
 

@@ -98,7 +98,7 @@ if (!empty($_POST) AND isset($_POST)){
 
     //Pas d'erreurs
     if (empty($errors)){
-        $inscriptionFirstStep=$bdd->prepare('INSERT INTO apprenant ( sex, nam, surname, address, cp, city, born, phone, email, relation, child, status, country, nationality, arrived, firstlanguage, secondlanguage, create_at) VALUES (:sex,:nam,:surname,:address,:cp,:city,:born,:tel,:mail,:relation,:child,:status,:country,:nationality,:arrived,:firstlanguage,:secondlanguage,:create_at)');
+        $inscriptionFirstStep=$bdd->prepare('INSERT INTO apprenant ( sex, name, surname, address, cp, city, born, phone, email, relation, child, status, country, nationality, arrived, firstlanguage, secondlanguage, create_at) VALUES (:sex,:nam,:surname,:address,:cp,:city,:born,:tel,:mail,:relation,:child,:status,:country,:nationality,:arrived,:firstlanguage,:secondlanguage,:create_at)');
         $inscriptionFirstStep->bindValue(':sex',$post['genre']);
         $inscriptionFirstStep->bindValue(':nam',$post['name']);
         $inscriptionFirstStep->bindValue(':surname',$post['surname']);

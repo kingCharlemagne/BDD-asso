@@ -16,3 +16,12 @@ function etat(i) {
         btn[i].setAttribute("data-status","0")
     }
 }
+
+
+function typeDate() {
+    document.getElementById('searchInput').setAttribute('type','date');
+}
+
+function typeSearch() {
+    document.getElementById('searchInput').setAttribute('type','search');
+}

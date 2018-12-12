@@ -7,17 +7,12 @@ require 'php/traitement/recherche_traitement.php'
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BDD</title>
+    <title>BDD|Moteur de recherche</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="index.php">
-            <button type="button" class="btn btn-light"><img src="img/accueil-50.png" width="30" height="30" class="d-inline-block align-top" alt=""></button>
-            Accueil
-        </a>
-    </nav>
+    <?php include 'php/navbar.php' ?>
 </header>
 
 <section class="container mt-5">
@@ -28,18 +23,16 @@ require 'php/traitement/recherche_traitement.php'
                     <div class="col-auto my-1">
                         <label class="mr-sm-2 sr-only" for="selectCategorie">Choisir le type de recherche</label>
                         <select class="custom-select mr-sm-2 text-center" id="selectCategorie" name="selectCategorie">
-                            <option value="0" selected>Nom</option>
-                            <option value="1">Prénom</option>
-                            <option value="2">Id</option>
-                            <option value="3">Date de naissance</option>
-                            <option value="4">Téléphone</option>
+                            <option onclick="typeSearch() " value="0" selected>Nom</option>
+                            <option onclick="typeSearch()" value="1">Prénom</option>
+                            <option onclick="typeSearch()" value="2">Id</option>
+                            <option onclick="typeDate()" value="3">Date de naissance</option>
+                            <option onclick="typeSearch()" value="4">Téléphone</option>
                         </select>
                     </div>
-                    <input class="form-control mr-sm-2" type="search" name="search" aria-label="Search" required>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+                    <input class="form-control mr-sm-2" type="search" name="search" id="searchInput" aria-label="Search" required>
+                    <button class="btn btn-outline-success my-2 my-sm-0" name="subSearch" type="submit">Recherche</button>
                 </form>
-                <a class="ml-4" href="#" data-toggle="modal" data-target="#advancedSearch">Recherche avancée</a>
-                <?php require 'php/modal/modal_recherche avance.php'?>
             </nav>
 
             <div id="dataResult">
@@ -57,6 +50,7 @@ require 'php/traitement/recherche_traitement.php'
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/function.js"></script>
 </body>
 </html>
 
