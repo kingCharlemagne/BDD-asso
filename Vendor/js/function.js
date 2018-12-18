@@ -17,7 +17,7 @@ function etat(i) {
     }
 }
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////
 function typeDate() {
     document.getElementById('searchInput').setAttribute('type','date');
 }

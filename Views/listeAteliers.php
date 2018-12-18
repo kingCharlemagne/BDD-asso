@@ -1,6 +1,6 @@
 <?php
-require 'php/traitement/modalAjout_traitement.php';
-require 'php/traitement/listeAtelier_traitement.php';
+require '../Controllers/modalAjout_traitement.php';
+require '../Model/listeAtelier_Select.php';
 ?>
 
 <!doctype html>
@@ -8,11 +8,11 @@ require 'php/traitement/listeAtelier_traitement.php';
 <head>
     <meta charset="UTF-8">
     <title>BDD | Liste ateliers</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
 </head>
 <body>
 <header>
-    <?php include 'php/navbar.php' ?>
+    <?php include 'navbar.php' ?>
 </header>
 <?php if (!empty($errors) AND isset($errors)) { ?>
     <div class="alert alert-danger col-12 text-center" role="alert">
@@ -31,7 +31,7 @@ require 'php/traitement/listeAtelier_traitement.php';
                 <button type="button" class="btn bg-success text-white" data-toggle="modal" data-target="#exampleModal">
                     Ajouter un atelier
                 </button>
-                <?php require 'php/modal/modal_ajout.php' ?>
+                <?php require 'modal_ajout.php' ?>
             </div>
             <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                 <!--Alpha Francophone-->
@@ -613,7 +613,7 @@ require 'php/traitement/listeAtelier_traitement.php';
         </div>
 
         <div class="col-2">
-            <?php include 'php/navSlide.php' ?>
+            <?php include 'navSlide.php' ?>
         </div>
     </div>
 </section>
@@ -624,7 +624,7 @@ require 'php/traitement/listeAtelier_traitement.php';
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/function.js"></script>
+<script src="../Vendor/js/bootstrap.js"></script>
+<script src="../Vendor/js/function.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-require 'inc/bddLog.php';
+require '../Model/bddLog.php';
 
 // ALPHA
 

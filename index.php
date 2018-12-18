@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>BDD</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Vendor/css/bootstrap.min.css">
 </head>
 <body>
 <header>
@@ -21,46 +21,37 @@ session_start();
         <div class="card bg-light mb-3" style="width: 18rem;">
             <div class="card-header">Inscription apprenant</div>
             <div class="card-body">
-                <img src="img/plus-64.png" width="40" height="40" alt="icone inscription">
+                <img src="Vendor/img/plus-64.png" width="40" height="40" alt="icone inscription">
                 <br>
-                <a class="btn btn-outline-dark mt-2" href="inscription.php">Ajout</a>
+                <a class="btn btn-outline-dark mt-2" href="Views/inscription.php">Ajout</a>
             </div>
         </div>
 
-        <div class="card bg-dark text-white mb-3" style="width: 18rem;">
-            <div class="card-header">Liste apprenants</div>
-            <br>
-            <div class="card-body">
-                <img src="img/liste-30.png" width="40" height="40" alt="icone liste apprenants">
-                <br>
-                <a class="btn btn-outline-light mt-2" href="listeApprenant.php">Consulter</a>
-            </div>
-        </div>
 
         <div class="card text-white bg-info mb-3" style="width: 18rem;">
             <div class="card-header">Liste des ateliers</div>
             <div class="card-body">
-                <img src="img/atelier-50.png" width="40" height="40" alt="icone liste des ateliers">
+                <img src="Vendor/img/atelier-50.png" width="40" height="40" alt="icone liste des ateliers">
                 <br>
-                <a class="btn btn-outline-light mt-2" href="listeAteliers.php">Consulter</a>
+                <a class="btn btn-outline-light mt-2" href="Views/listeAteliers.php">Consulter</a>
             </div>
         </div>
 
         <div class="card text-white bg-warning mb-3" style="width: 18rem;">
             <div class="card-header">Moteur de recherche</div>
             <div class="card-body">
-                <img src="img/recherche-50.png" width="40" height="40" alt="icone recherche">
+                <img src="Vendor/img/recherche-50.png" width="40" height="40" alt="icone recherche">
                 <br>
-                <a class="btn btn-outline-light mt-2" href="recherche.php">Recherche</a>
+                <a class="btn btn-outline-light mt-2" href="Views/recherche.php">Recherche</a>
             </div>
         </div>
 
         <div class="card text-white bg-success mb-3" style="width: 18rem;">
             <div class="card-header">Statistiques</div>
             <div class="card-body">
-                <img src="img/statistics-50.png" width="40" height="40" alt="icone statistique">
+                <img src="Vendor/img/statistics-50.png" width="40" height="40" alt="icone statistique">
                 <br>
-                <a class="btn btn-outline-light mt-2" href="statistique.php">Consulter</a>
+                <a class="btn btn-outline-light mt-2" href="Views/statistique.php">Consulter</a>
             </div>
         </div>
 

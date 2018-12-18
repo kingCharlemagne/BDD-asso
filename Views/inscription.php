@@ -1,18 +1,18 @@
 <?php
 session_start();
-include 'php/traitement/inscription_traitement.php';
+include '../Controllers/inscription_traitement.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
     <title>BDD | Inscription</title>
 </head>
 <body>
 <header>
-    <?php include 'php/navBar.php'; ?>
+    <?php include 'navbar.php'; ?>
 </header>
 
 <section class="mt-3">
@@ -35,12 +35,12 @@ include 'php/traitement/inscription_traitement.php';
                             <!--genre-->
                             <div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genre" id="genreF" value="Femme">
-                                    <label class="form-check-label" for="genreF">Mr</label>
+                                    <input class="form-check-input" type="radio" name="genre" id="genreM" value="Homme">
+                                    <label class="form-check-label" for="genreM">Mr</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genre" id="genreM" value="Homme">
-                                    <label class="form-check-label" for="genreM">Mme</label>
+                                    <input class="form-check-input" type="radio" name="genre" id="genreF" value="Femme">
+                                    <label class="form-check-label" for="genreF">Mme</label>
                                 </div>
                             </div>
 
@@ -171,7 +171,7 @@ include 'php/traitement/inscription_traitement.php';
         </div>
 
         <div class="col-2">
-            <?php include 'php/navSlide.php' ?>
+            <?php include 'navSlide.php' ?>
         </div>
     </div>
 </section>

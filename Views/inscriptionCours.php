@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'php/traitement/inscriptionCours_traitement.php'
+require '../Controllers/inscriptionCours_traitement.php'
 ?>
 
 <!doctype html>
@@ -8,11 +8,11 @@ require 'php/traitement/inscriptionCours_traitement.php'
 <head>
     <meta charset="UTF-8">
     <title>BDD | Inscription cours</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
 </head>
 <body>
 <header>
-    <?php include 'php/navbar.php' ?>
+    <?php include 'navbar.php' ?>
 </header>
 <?php if (!empty($errors)) { ?>
     <div class="alert alert-danger col-12 text-center" role="alert">
@@ -82,7 +82,7 @@ require 'php/traitement/inscriptionCours_traitement.php'
                                     <?php } ?>
                                 </select>
                             </div>
-                            <?php require 'php/paiement.php' ?>
+                            <?php require 'paiement.php' ?>
                         </form>
                     </div>
                 </div>
@@ -135,7 +135,7 @@ require 'php/traitement/inscriptionCours_traitement.php'
                                     <?php } ?>
                                 </select>
                             </div>
-                            <?php require 'php/paiement.php' ?>
+                            <?php require 'paiement.php' ?>
                         </form>
                     </div>
                 </div>
@@ -188,7 +188,7 @@ require 'php/traitement/inscriptionCours_traitement.php'
                                     <?php } ?>
                                 </select>
                             </div>
-                            <?php require 'php/paiement.php' ?>
+                            <?php require 'paiement.php' ?>
                         </form>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'php/traitement/recherche_traitement.php'
+require '../Controllers/recherche_traitement.php'
 ?>
 
 <!doctype html>
@@ -8,11 +8,11 @@ require 'php/traitement/recherche_traitement.php'
 <head>
     <meta charset="UTF-8">
     <title>BDD|Moteur de recherche</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
 </head>
 <body>
 <header>
-    <?php include 'php/navbar.php' ?>
+    <?php include 'navbar.php' ?>
 </header>
 
 <section class="container mt-5">
@@ -36,21 +36,23 @@ require 'php/traitement/recherche_traitement.php'
             </nav>
 
             <div id="dataResult">
-                <?php foreach ($results as $data){
-                    require 'php/dataResult_model.php';
+                <?php if (isset($results)){
+                    foreach ($results as $data){
+                    require 'dataResult_model.php';
+                    }
                 }?>
             </div>
         </div>
         <div class="col-3">
-            <?php include 'php/navSlide.php' ?>
+            <?php include 'navSlide.php' ?>
         </div>
     </div>
 </section>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/function.js"></script>
+<script src="../Vendor/js/bootstrap.js"></script>
+<script src="../Vendor/js/function.js"></script>
 </body>
 </html>
 

@@ -1,5 +1,5 @@
 <?php
-require 'inc/bddLog.php';
+require '../Model/bddLog.php';
 
 if (!empty($_POST) AND isset($_POST)){
     $errors=[];
@@ -42,15 +42,7 @@ if (!empty($_POST) AND isset($_POST)){
 
 
     if (empty($errors)){
-        $insertAtelier=$bdd->prepare('INSERT INTO ateliers(categorie,jour, atelier, horaire_debut, horaire_fin, benevole, remplacent) VALUES (:categorie, :jour,:atelier,:horaireDebut,:horaireFin,:benevole,:remplacent)');
-        $insertAtelier->bindValue(':categorie',$post['categorie']);
-        $insertAtelier->bindValue(':jour',$post['jour']);
-        $insertAtelier->bindValue(':atelier',$post['atelier']);
-        $insertAtelier->bindValue(':horaireDebut',$post['horaireStart']);
-        $insertAtelier->bindValue(':horaireFin',$post['horaireEnd']);
-        $insertAtelier->bindValue(':benevole',$post['benevole']);
-        $insertAtelier->bindValue(':remplacent',$post['remplacent']);
-        $insertAtelier->execute();
+       require '../Model/modalAjout_Insert.php';
     }
 
     //faire l'affichage des erreurs dans la views

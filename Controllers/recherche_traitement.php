@@ -1,5 +1,5 @@
 <?php
-require 'inc/bddLog.php';
+require '../Model/bddLog.php';
 
 if (!empty($_GET) AND isset($_GET)) {
     $get=[];
@@ -26,10 +26,7 @@ if (!empty($_GET) AND isset($_GET)) {
 
     $search=$_GET['search'];
 
-
-    $search = $bdd->query('SELECT * FROM apprenant WHERE '.$categorie.' LIKE "%' . $search . '%"');
-    $search->execute();
-    $results = $search->fetchAll();
+    require '../Model/recherche_Select.php';
 
 
 }
