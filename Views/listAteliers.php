@@ -85,7 +85,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($LAdatas as  $data) {
+                                <?php foreach ($LAdatas as  $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -98,7 +98,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($MAdatas as $data) {
+                                <?php foreach ($MAdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -111,7 +111,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($MEAdatas as $data) {
+                                <?php foreach ($MEAdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -124,7 +124,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($JAdatas as $data) {
+                                <?php foreach ($JAdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -137,7 +137,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($VAdatas as $data) {
+                                <?php foreach ($VAdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -185,7 +185,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($LIdatas as $data) {
+                                <?php foreach ($LIdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -199,7 +199,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php require 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($MIdatas as $data) {
+                                <?php foreach ($MIdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -213,7 +213,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($MEIdatas as $data) {
+                                <?php foreach ($MEIdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -227,7 +227,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($JIdatas as $data) {
+                                <?php foreach ($JIdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -241,7 +241,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($VIdatas as $data) {
+                                <?php foreach ($VIdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -284,7 +284,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($LDdatas as $data) {
+                                <?php foreach ($LDdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -297,7 +297,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($MDdatas as $data) {
+                                <?php foreach ($MDdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -310,7 +310,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($MEDdatas as $data) {
+                                <?php foreach ($MEDdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -323,7 +323,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($JDdatas as $data) {
+                                <?php foreach ($JDdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
@@ -336,7 +336,7 @@ require '../Model/listAtelier_Select.php';
                                 <?php include 'model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
-                                <?php foreach ($VDdatas as $data) {
+                                <?php foreach ($VDdatas as $i=>$data) {
                                     include 'model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
