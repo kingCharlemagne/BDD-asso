@@ -33,7 +33,7 @@ session_start();
             <div class="card-body">
                 <img src="Vendor/img/atelier-50.png" width="40" height="40" alt="icone liste des ateliers">
                 <br>
-                <a class="btn btn-outline-light mt-2" href="Views/listeAteliers.php">Consulter</a>
+                <a class="btn btn-outline-light mt-2" href="Views/listAteliers.php">Consulter</a>
             </div>
         </div>
 

@@ -38,7 +38,7 @@ require '../Controllers/recherche_traitement.php'
             <div id="dataResult">
                 <?php if (isset($results)){
                     foreach ($results as $data){
-                    require 'dataResult_model.php';
+                    require 'model_dataResult.php';
                     }
                 }?>
             </div>

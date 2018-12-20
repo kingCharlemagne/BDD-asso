@@ -10,7 +10,7 @@
             </ul>
 
             <ul><h6>Ateliers</h6>
-                <li><a href="listeAteliers.php">Liste ateliers</a></li>
+                <li><a href="listAteliers.php">Liste ateliers</a></li>
             </ul>
         </nav>
     </div>

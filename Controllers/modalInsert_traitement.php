@@ -42,7 +42,7 @@ if (!empty($_POST) AND isset($_POST)){
 
 
     if (empty($errors)){
-       require '../Model/modalAjout_Insert.php';
+       require '../Model/modalAtelier_Insert.php';
     }
 
     //faire l'affichage des erreurs dans la views
