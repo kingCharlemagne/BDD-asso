@@ -10,23 +10,20 @@ function typeSearch() {
 
 ////////////////////////////////////////listAtelier.php/////////////////////////////////////////////////
 
-function etat(i,id) {
-    let btn= document.getElementsByClassName('etat');
-    let status=btn[i].getAttribute("data-status");;
-    if (status==="0"){
-        console.log(btn[i]);
-        console.log(status);
-        //document.location.href="listAteliers.php?etat=1&idEtat="+id;
-    }else if (status==="1"){
-        console.log(status);
-        //document.location.href="listAteliers.php?etat=0&idEtat="+id;
+function switchState(i,id) {
+    let btn= document.getElementsByClassName('state');
+    let btnState=btn[i].getAttribute("data-state");
+    if (btnState ==="0"){
+        document.location.href="listAteliers.php?state=1&idState="+id;
+    }else if (btnState ==="1"){
+        document.location.href="listAteliers.php?state=0&idState="+id;
     }
 }
 
 function deleteMsg(idAtelier) {
-    let rep=confirm("Confirmer pour supprimer l'atelier");
+    let conf=confirm("Confirmer pour supprimer l'atelier");
 
-    if (rep===true) {
+    if (conf===true) {
         document.location.href="listAteliers.php?id="+idAtelier;
     }
 }

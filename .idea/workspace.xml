@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b13725-b540-49af-a6a0-7ebd09231a5b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Model/listAtelierEtat_Update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/listAtelier_traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/listAtelier_traitement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/listAtelierEtat_Update.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/listAtelierEtat_Update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vendor/js/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vendor/js/function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/listAteliers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/listAteliers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/model_tbodyTableAtelier.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model_tbodyTableAtelier.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,20 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Vendor/js/function.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="model_tbodyTableAtelier.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Views/model_tbodyTableAtelier.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="280">
+              <caret line="14" column="180" selection-start-line="14" selection-start-column="180" selection-end-line="14" selection-end-column="180" />
             </state>
           </provider>
         </entry>
@@ -62,8 +52,17 @@
       <file leaf-file-name="listAtelier_traitement.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controllers/listAtelier_traitement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="20">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Vendor/js/function.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -147,11 +146,11 @@
         <option value="$PROJECT_DIR$/Controllers/updateAtelier_traitement.php" />
         <option value="$PROJECT_DIR$/Model/listAtelier_delete.php" />
         <option value="$PROJECT_DIR$/Views/modal_deleteAtelier.php" />
-        <option value="$PROJECT_DIR$/Views/model_tbodyTableAtelier.php" />
+        <option value="$PROJECT_DIR$/Views/listAteliers.php" />
         <option value="$PROJECT_DIR$/Model/listAtelierEtat_Update.php" />
         <option value="$PROJECT_DIR$/Controllers/listAtelier_traitement.php" />
-        <option value="$PROJECT_DIR$/Views/listAteliers.php" />
         <option value="$PROJECT_DIR$/Vendor/js/function.js" />
+        <option value="$PROJECT_DIR$/Views/model_tbodyTableAtelier.php" />
       </list>
     </option>
   </component>
@@ -217,7 +216,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/php_POO_OCR" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
@@ -259,12 +258,12 @@
       <workItem from="1544014689338" duration="7671000" />
       <workItem from="1544209463229" duration="24851000" />
       <workItem from="1544620131265" duration="21790000" />
-      <workItem from="1545037567592" duration="48315000" />
+      <workItem from="1545037567592" duration="54590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157081000" />
+    <option name="totallyTimeSpent" value="163356000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -617,10 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/listAtelierEtat_Update.php">
+    <entry file="file://$PROJECT_DIR$/Views/listAteliers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="787">
+          <caret line="358" column="48" selection-start-line="358" selection-start-column="48" selection-end-line="358" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -631,31 +630,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/listAtelier_traitement.php">
+    <entry file="file://$PROJECT_DIR$/Model/listAtelierEtat_Update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="160">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/model_tbodyTableAtelier.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="280">
+          <caret line="14" column="180" selection-start-line="14" selection-start-column="180" selection-end-line="14" selection-end-column="180" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/listAteliers.php">
+    <entry file="file://$PROJECT_DIR$/Controllers/listAtelier_traitement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="787">
-          <caret line="358" column="48" selection-start-line="358" selection-start-column="48" selection-end-line="358" selection-end-column="48" />
+        <state relative-caret-position="20">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vendor/js/function.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="191">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>

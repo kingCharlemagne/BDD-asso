@@ -6,7 +6,7 @@ if (isset($_GET) AND !empty($_GET)){
         require '../Model/listAtelier_delete.php';
     }
 
-    if (isset($_GET['etat']) AND isset($_GET['idEtat']) AND !empty($_GET['etat']) AND !empty($_GET['idEtat']) AND is_numeric($_GET['etat'])AND is_numeric($_GET['idEtat'])){
+    if (isset($_GET['state']) AND isset($_GET['idState'])){
         require '../Model/listAtelierEtat_Update.php';
     }
 }

@@ -4,7 +4,15 @@
     <td><?= $data['horaire_fin'] ?></td>
     <td><?= $data['effectif'] ?></td>
     <td>
-        <button onclick="etat(<?=$i?>,<?= $data['id'] ?>)" type="button"  data-status="<?= $data['etat']?>" class="btn btn-success etat"><?= $data['etat']?></button></td>
+        <?php
+        $color="success";
+        $textBtnState="OK";
+        if ($data['etat']=== "1" ){
+            $color="danger";
+            $textBtnState="STOP";
+
+        }?>
+        <button onclick="switchState(<?=$i?>,<?= $data['id'] ?>)" onload="" type="button"  data-state="<?= $data['etat']?>" class="btn btn-<?= $color?> state"><?=$textBtnState." ".$data['etat']?></button></td>
     </td>
     <td><?= $data['benevole'] ?></td>
     <td><?= $data['remplacent'] ?></td>
