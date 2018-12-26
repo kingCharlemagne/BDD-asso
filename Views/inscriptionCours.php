@@ -49,11 +49,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 </div>
                                 <select class="custom-select" id="lessonOneAlpha" name="lessonOne">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($alphaDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($alphaDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    } ?>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
@@ -62,11 +60,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 </div>
                                 <select class="custom-select" id="lessonTwoAlpha" name="lessonTwo">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($alphaDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($alphaDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    }?>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
@@ -75,11 +71,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 </div>
                                 <select class="custom-select" id="lessonThreeAlpha" name="lessonThree">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($alphaDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($alphaDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    } ?>
                                 </select>
                             </div>
                             <?php require 'paiement.php' ?>
@@ -98,11 +92,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonOneIntermediaire"
                                         name="lessonOne">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($intermediaireDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($intermediaireDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    }  ?>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
@@ -113,11 +105,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonTwoIntermediaire"
                                         name="lessonTwo">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($intermediaireDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($intermediaireDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    }  ?>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
@@ -128,11 +118,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonThreeIntermediaire"
                                         name="lessonThree">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($intermediaireDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($intermediaireDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    } ?>
                                 </select>
                             </div>
                             <?php require 'paiement.php' ?>
@@ -151,11 +139,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonOneDebutant"
                                         name="lessonOne">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($debutantDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($debutantDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    } ?>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
@@ -166,11 +152,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonTwoDebutant"
                                         name="lessonTwo">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($debutantDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($debutantDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    } ?>
                                 </select>
                             </div>
                             <div class="input-group mb-3">
@@ -181,11 +165,9 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonThreeDebutant"
                                         name="lessonThree">
                                     <option selected>Sélectionner</option>
-                                    <?php foreach ($debutantDatas as $data) { ?>
-                                        <option value="<?= $data['id'] ?>"><?= $data['jour'] ?>
-                                            | <?= $data['atelier'] ?>: <?= $data['horaire_debut'] ?>
-                                            -<?= $data['horaire_fin'] ?> </option>
-                                    <?php } ?>
+                                    <?php foreach ($debutantDatas as $data) {
+                                        require 'model_optionInscriptionCours.php';
+                                    }?>
                                 </select>
                             </div>
                             <?php require 'paiement.php' ?>

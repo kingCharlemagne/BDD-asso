@@ -51,7 +51,7 @@ session_start();
             <div class="card-body">
                 <img src="Vendor/img/statistics-50.png" width="40" height="40" alt="icone statistique">
                 <br>
-                <a class="btn btn-outline-light mt-2" href="Views/statistique.php">Consulter</a>
+                <a class="btn btn-outline-light mt-2" href="Views/statistic.php">Consulter</a>
             </div>
         </div>
 

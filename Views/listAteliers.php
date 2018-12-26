@@ -25,7 +25,7 @@ require '../Model/listAtelier_Select.php';
     </div>
 <?php } ?>
 <section class="mt-4">
-    <div class="justify-content-end">
+    <div class="d-flex mr-3 justify-content-end">
         <!-- Button modal -->
         <button type="button" class="btn bg-success text-white" data-toggle="modal" data-target="#insertAtelier">
             Ajouter un atelier
