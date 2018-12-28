@@ -34,7 +34,7 @@ if (!empty($_POST) AND isset($_POST)){
     if(empty($post['cp']) OR !isset($post['cp'])){
         $errors[]='Champ Code Postal vide';
     }elseif (!is_numeric($post['cp']) OR strlen($post['cp']) != 5){
-        $errors[]='Champ Code Postal invalide, saisir un code postal valide';
+        $errors[]='Champ Code Postal invalide';
     }
 
     //city
@@ -50,13 +50,13 @@ if (!empty($_POST) AND isset($_POST)){
     //tel
     if (isset($post['tel']) AND !empty($post['tel'])){
         if (!is_numeric($post['tel']) OR strlen($post['tel'])<4 OR strlen($post['tel'])>20){
-            $errors[]='Champ Téléphone invalide, saisir un numéros de téléphone valide';
+            $errors[]='Champ Téléphone invalide';
         }
     }
 
     //email
     if (isset($post['mail']) AND !empty($post['mail']) AND !filter_var($post['mail'], FILTER_VALIDATE_EMAIL)){
-            $errors[]='Champ Adresse E-mail invalide, saisir un E-mail valide';
+            $errors[]='Champ Adresse e-mail invalide';
     }
 
     //familySituation
@@ -66,7 +66,7 @@ if (!empty($_POST) AND isset($_POST)){
 
     //numbChild
     if (!is_numeric($post['numbChild'])){
-        $errors[]='Champ nombre d\'enfants invalide, saisir un nombre';
+        $errors[]='Champ nombre d\'enfants invalide';
     }
 
     //status
@@ -103,7 +103,7 @@ if (!empty($_POST) AND isset($_POST)){
             $_SESSION['id_student']= $bdd->lastInsertId();
             header('Location: inscriptionCours.php');
         }else{
-            $errors[]="Une erreur est survenue l'or de l'enregistrement des données, ressayer où contacter le webmaster" ;
+            $errors[]="Une erreur est survenue l'or de l'enregistrement des données, ressayer  si le problème persiste contacter le webmaster" ;
         }
 
     }
