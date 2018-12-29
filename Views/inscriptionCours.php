@@ -178,8 +178,8 @@ require '../Controllers/inscriptionCours_traitement.php'
         </div>
 </section>
 
-<footer style="height: 10em">
-
+<footer>
+    <?php include 'footer.php'?>
 </footer>
 
 <script>
