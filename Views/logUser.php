@@ -49,7 +49,7 @@ require '../Controllers/logUser_traitement.php'
 </section>
 
 <footer>
-
+    <?php include 'footer.php' ?>
 </footer>
 
 </body>

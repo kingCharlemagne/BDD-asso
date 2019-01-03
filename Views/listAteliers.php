@@ -30,7 +30,7 @@ require '../Model/listAtelier_Select.php';
         <button type="button" class="btn bg-success text-white" data-toggle="modal" data-target="#insertAtelier">
             Ajouter un atelier
         </button>
-        <?php require 'modal_insertAtelier.php' ?>
+        <?php require 'modal/modal_insertAtelier.php' ?>
     </div>
     <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
         <!--Alpha Francophone-->
@@ -82,11 +82,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="alpha-lundi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($LAdatas as  $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -95,11 +95,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="alpha-mardi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($MAdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -108,11 +108,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="alpha-mercredi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($MEAdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -121,11 +121,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="alpha-jeudi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($JAdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -134,11 +134,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="alpha-vendredi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($VAdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -182,11 +182,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="intermediaire-lundi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($LIdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -196,11 +196,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="intermediaire-mardi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php require 'model_theadTableAtelierl.php' ?>
+                                <?php require 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($MIdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -210,11 +210,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="intermediaire-mercredi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($MEIdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -224,11 +224,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="intermediaire-jeudi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($JIdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -238,11 +238,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="intermediaire-vendredi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($VIdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -281,11 +281,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="debutant-lundi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($LDdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -294,11 +294,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="debutant-mardi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($MDdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -307,11 +307,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="debutant-mercredi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($MEDdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -320,11 +320,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="debutant-jeudi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($JDdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -333,11 +333,11 @@ require '../Model/listAtelier_Select.php';
                              aria-labelledby="debutant-vendredi-list">
                             <table class="table table-striped">
                                 <thead>
-                                <?php include 'model_theadTableAtelierl.php' ?>
+                                <?php include 'model/model_theadTableAtelierl.php' ?>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($VDdatas as $i=>$data) {
-                                    include 'model_tbodyTableAtelier.php';
+                                    include 'model/model_tbodyTableAtelier.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -350,7 +350,7 @@ require '../Model/listAtelier_Select.php';
 </section>
 
 <footer>
-    <?php include 'footer.php'?>
+    <?php include 'footer.php' ?>
 </footer>
 <script src="../Vendor/jquery/dist/jquery.min.js"></script>
 <script src="../Vendor/js/bootstrap.js"></script>

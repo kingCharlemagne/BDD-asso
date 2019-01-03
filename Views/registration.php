@@ -10,7 +10,7 @@ require '../Controllers/registration_traitement.php'
 </head>
 <body>
 <header>
-    <?php include 'navbar.php'?>
+    <?php include 'navbar.php' ?>
 </header>
 
 <?php if (!empty($errors) AND isset($errors)) { ?>
@@ -52,7 +52,7 @@ require '../Controllers/registration_traitement.php'
 </section>
 
 <footer>
-
+  <?php include 'footer.php'?>
 </footer>
 
 </body>

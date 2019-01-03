@@ -12,7 +12,7 @@ require '../Controllers/inscriptionCours_traitement.php'
 </head>
 <body>
 <header>
-    <?php include 'navbar.php' ?>
+    <?php include 'model/model_navbar.php' ?>
 </header>
 <?php if (!empty($errors)) { ?>
     <div class="alert alert-danger col-12 text-center" role="alert">
@@ -50,7 +50,7 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonOneAlpha" name="lessonOne">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($alphaDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     } ?>
                                 </select>
                             </div>
@@ -61,7 +61,7 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonTwoAlpha" name="lessonTwo">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($alphaDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     }?>
                                 </select>
                             </div>
@@ -72,11 +72,11 @@ require '../Controllers/inscriptionCours_traitement.php'
                                 <select class="custom-select" id="lessonThreeAlpha" name="lessonThree">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($alphaDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     } ?>
                                 </select>
                             </div>
-                            <?php require 'paiement.php' ?>
+                            <?php require 'model/model_payment.php' ?>
                         </form>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ require '../Controllers/inscriptionCours_traitement.php'
                                         name="lessonOne">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($intermediaireDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     }  ?>
                                 </select>
                             </div>
@@ -106,7 +106,7 @@ require '../Controllers/inscriptionCours_traitement.php'
                                         name="lessonTwo">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($intermediaireDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     }  ?>
                                 </select>
                             </div>
@@ -119,11 +119,11 @@ require '../Controllers/inscriptionCours_traitement.php'
                                         name="lessonThree">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($intermediaireDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     } ?>
                                 </select>
                             </div>
-                            <?php require 'paiement.php' ?>
+                            <?php require 'model/model_payment.php' ?>
                         </form>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ require '../Controllers/inscriptionCours_traitement.php'
                                         name="lessonOne">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($debutantDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     } ?>
                                 </select>
                             </div>
@@ -153,7 +153,7 @@ require '../Controllers/inscriptionCours_traitement.php'
                                         name="lessonTwo">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($debutantDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     } ?>
                                 </select>
                             </div>
@@ -166,11 +166,11 @@ require '../Controllers/inscriptionCours_traitement.php'
                                         name="lessonThree">
                                     <option selected>Sélectionner</option>
                                     <?php foreach ($debutantDatas as $data) {
-                                        require 'model_optionInscriptionCours.php';
+                                        require 'model/model_optionInscriptionCours.php';
                                     }?>
                                 </select>
                             </div>
-                            <?php require 'paiement.php' ?>
+                            <?php require 'model/model_payment.php' ?>
                         </form>
                     </div>
                 </div>
@@ -179,7 +179,7 @@ require '../Controllers/inscriptionCours_traitement.php'
 </section>
 
 <footer>
-    <?php include 'footer.php'?>
+    <?php include 'footer.php' ?>
 </footer>
 
 <script>

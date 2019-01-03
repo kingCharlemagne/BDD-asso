@@ -34,8 +34,8 @@ if (!empty($_POST) AND isset($_POST)){
 
 
     if (empty($errors)){
-        require '../Model/inscriptionCours_Insert.php';
-        if ($insertLesson->execute()){
+        require '../Model/inscriptionCours_Update.php';
+        if ($inscriptionSecondStep->execute()){
             header('Location: ../index.php');
         }
     }

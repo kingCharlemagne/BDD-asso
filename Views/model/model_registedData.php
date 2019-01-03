@@ -23,6 +23,17 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
+                        <p>Atelier N°1: <?= $data['first_lesson'] ?></p>
+                    </div>
+                    <div class="col">
+                        <p>Atelier N°2: <?= $data['second_lesson'] ?></p>
+                    </div>
+                    <div class="col">
+                        <p>Atelier N°3: <?= $data['last_lesson'] ?></p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
                         <p>Téléphone: <?= $data['phone'] ?></p>
                     </div>
                     <div class="col">
@@ -37,8 +48,8 @@
                 <div class="row text-center">
                     <div class="col">
                         <button class="btn btn-link" type="button" data-toggle="collapse"
-                                data-target="#<?= $data['name'].$data['id'] ?>" aria-expanded="true"
-                                aria-controls="<?= $data['name'].$data['id'] ?>">
+                                data-target="#<?= $data['name'] . $data['id'] ?>" aria-expanded="true"
+                                aria-controls="<?= $data['name'] . $data['id'] ?>">
                             Détail
                         </button>
                     </div>
@@ -46,7 +57,8 @@
             </div>
         </div>
     </div>
-    <div id="<?= $data['name'].$data['id'] ?>" class="collapse" aria-labelledby="heading<?= $data['id'] ?>">
+    <!--------------------------------------------------------------------------------------------->
+    <div id="<?= $data['name'] . $data['id'] ?>" class="collapse" aria-labelledby="heading<?= $data['id'] ?>">
         <div class="card-body">
             <div class="row">
                 <div class="col">
@@ -88,6 +100,19 @@
                 </div>
                 <div class="col">
                     <p>Langue secondaire: <?= $data['secondlanguage'] ?></p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <p>Cotisation:
+                        <span class="text-success">
+                            <?php if (isset($data['receipt_numbers']) AND !empty($data['receipt_numbers'] AND is_numeric($data['receipt_numbers']))) {
+                                echo "à jour";
+                            } else {
+                                echo "manquante";
+                            } ?>
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>

@@ -50,6 +50,10 @@ require '../Controllers/updateAtelier_traitement.php';
     <?php } ?>
 </section>
 
+<footer>
+    <?php include 'footer.php' ?>
+</footer>
+
 </body>
 </html>
 

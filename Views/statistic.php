@@ -66,7 +66,7 @@ require '../Controllers/statistic_traitement.php'
                                     <tbody>
                                     <?php foreach ($contSexDatas as $i => $data) {
                                         $val = "sex";
-                                        require 'modal_tbodyTableStatistic.php';
+                                        require 'modal/modal_tbodyTableStatistic.php';
                                     } ?>
                                     </tbody>
                                 </table>
@@ -90,7 +90,7 @@ require '../Controllers/statistic_traitement.php'
                                     <tbody>
                                     <?php foreach ($contCityDatas as $i => $data) {
                                         $val = "city";
-                                        require 'modal_tbodyTableStatistic.php';
+                                        require 'modal/modal_tbodyTableStatistic.php';
                                     } ?>
                                     </tbody>
                                 </table>
@@ -113,7 +113,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contStatusDatas as $i => $data) {
                                     $val = "status";
-                                    require 'modal_tbodyTableStatistic.php';
+                                    require 'modal/modal_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -136,7 +136,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contNationalityDatas as $i => $data) {
                                     $val = "nationality";
-                                    require 'modal_tbodyTableStatistic.php';
+                                    require 'modal/modal_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -159,7 +159,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contArrivedDatas as $i => $data) {
                                     $val = "arrived";
-                                    require 'modal_tbodyTableStatistic.php';
+                                    require 'modal/modal_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -182,7 +182,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contLanguageDatas as $i => $data) {
                                     $val = "firstlanguage";
-                                    require 'modal_tbodyTableStatistic.php';
+                                    require 'modal/modal_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -200,7 +200,7 @@ require '../Controllers/statistic_traitement.php'
 </section>
 
 <footer >
-    <?php include 'footer.php'?>
+    <?php include 'footer.php' ?>
 </footer>
 <script src="../Vendor/jquery/dist/jquery.min.js"></script>
 <script src="../Vendor/js/bootstrap.js"></script>

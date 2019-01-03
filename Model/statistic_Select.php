@@ -3,15 +3,14 @@ require 'bddLog.php';
 
 /////////////////////////////////////////////Inscription [ a vérifier]//////////////////////////////////////////////////////////
 $contInscription=$bdd->query('SELECT COUNT(id) as r FROM apprenant WHERE create_at');
-//$contInscription->execute();
-//$contInscriptionDatas=$contInscription->fetchAll();
+$contInscription->execute();
+$contInscriptionDatas=$contInscription->fetchAll();
 
 //////////////////////////////////////////////////Sex//////////////////////////////////////////////////////
 $contSex=$bdd->query('SELECT sex,COUNT(id) as count FROM apprenant WHERE create_at  LIKE "%' . $date . '%"  GROUP BY sex');
 $contSex->execute();
 $contSexDatas=$contSex->fetchAll();
 
-print_r($contSexDatas);
 
 //////////////////////////////////////////////////City//////////////////////////////////////////////////////
 $contCity=$bdd->query('SELECT city,COUNT(id) as count FROM apprenant WHERE create_at  LIKE "%' . $date . '%" GROUP BY city');

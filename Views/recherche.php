@@ -12,7 +12,7 @@ require '../Controllers/recherche_traitement.php'
 </head>
 <body>
 <header>
-    <?php include 'navbar.php' ?>
+    <?php include 'model/model_navbar.php' ?>
 </header>
 
 <section class="container mt-5">
@@ -38,7 +38,7 @@ require '../Controllers/recherche_traitement.php'
         <div id="dataResult">
             <?php if (isset($results)) {
                 foreach ($results as $data) {
-                    require 'model_dataResult.php';
+                    require 'model/model_registedData.php';
                 }
             } ?>
         </div>
@@ -46,7 +46,7 @@ require '../Controllers/recherche_traitement.php'
 </section>
 
 <footer>
-    <?php include 'footer.php'?>
+    <?php include 'model/model_footer.php' ?>
 </footer>
 <script src="../Vendor/jquery/dist/jquery.min.js"></script>
 <script src="../Vendor/js/bootstrap.js"></script>
