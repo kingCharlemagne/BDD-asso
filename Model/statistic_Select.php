@@ -1,8 +1,8 @@
 <?php
 require 'bddLog.php';
 
-/////////////////////////////////////////////Inscription [ a vérifier]//////////////////////////////////////////////////////////
-$contInscription=$bdd->query('SELECT COUNT(id) as r FROM apprenant WHERE create_at');
+/////////////////////////////////////////////Inscription//////////////////////////////////////////////////////////
+$contInscription=$bdd->query('SELECT COUNT(id) as count FROM apprenant WHERE create_at  LIKE "%' . $date . '%"');
 $contInscription->execute();
 $contInscriptionDatas=$contInscription->fetchAll();
 
@@ -36,3 +36,8 @@ $contArrivedDatas=$contArrived->fetchAll();
 $contLanguage=$bdd->query('SELECT firstlanguage,COUNT(id) as count FROM apprenant WHERE create_at  LIKE "%' . $date . '%" GROUP BY firstlanguage');
 $contLanguage->execute();
 $contLanguageDatas=$contLanguage->fetchAll();
+
+//////////////////////////////////////////////Comptabiliter//////////////////////////////////////////////////////////
+$contCompta=$bdd->query('SELECT COUNT(id)as count,SUM(price) as somme  FROM apprenant WHERE create_at  LIKE "%' . $date . '%"');
+$contCompta->execute();
+$contComptaDatas=$contCompta->fetchAll();

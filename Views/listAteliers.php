@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../Controllers/modalInsert_traitement.php';
 require '../Controllers/listAtelier_traitement.php';
 require '../Model/listAtelier_Select.php';

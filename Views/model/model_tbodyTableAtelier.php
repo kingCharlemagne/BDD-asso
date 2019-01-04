@@ -12,7 +12,7 @@
             $textBtnState="STOP";
 
         }?>
-        <button onclick="switchState(<?=$i?>,<?= $data['id'] ?>)" onload="" type="button"  data-state="<?= $data['etat']?>" class="btn btn-<?= $color?> state"><?=$textBtnState." ".$data['etat']?></button></td>
+        <button onclick="switchState(<?=$i?>,<?= $data['id'] ?>,<?= $data['etat'] ?>)" type="button" class="btn btn-<?= $color?> state"><?=$textBtnState?></button></td>
     </td>
     <td><?= $data['benevole'] ?></td>
     <td><?= $data['remplacent'] ?></td>

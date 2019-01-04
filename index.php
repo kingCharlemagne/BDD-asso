@@ -1,5 +1,6 @@
 <?php
 session_start();
+if(isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SESSION['role'] == 'ROLE_ADMIN')){
 ?>
 <!doctype html>
 <html lang="en">
@@ -58,5 +59,13 @@ session_start();
     </div>
 </section>
 
+<footer class="fixed-bottom">
+    <?php require "Views/footer.php"?>
+</footer>
+
 </body>
 </html>
+
+<?php }else{
+    // faire un header location code d'erreur pas accés à la page
+} ?>

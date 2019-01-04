@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../Controllers/updateAtelier_traitement.php';
 ?>
 <!doctype html>

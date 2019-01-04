@@ -49,30 +49,33 @@ require '../Controllers/statistic_traitement.php'
             <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="list-inscription" role="tabpanel"
                      aria-labelledby="list-inscription-list">
-                    bouh
+                    <div class="row">
+                        <div class="col">
+                            <?php foreach ($contInscriptionDatas as $i => $data) { ?>
+                                <p>Apprenant inscrit: <?= $data['count'] ?></p>
+                            <?php } ?>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="list-sex" role="tabpanel" aria-labelledby="list-sex-list">
-                    <div>
-                        <div class="row">
-                            <div class="col">
-                                <table class="table">
-                                    <thead class="thead-light">
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Genre</th>
-                                        <th scope="col">Nombre</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php foreach ($contSexDatas as $i => $data) {
-                                        $val = "sex";
-                                        require 'modal/modal_tbodyTableStatistic.php';
-                                    } ?>
-                                    </tbody>
-                                </table>
-                            </div>
+                    <div class="row">
+                        <div class="col">
+                            <table class="table">
+                                <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Genre</th>
+                                    <th scope="col">Nombre</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php foreach ($contSexDatas as $i => $data) {
+                                    $val = "sex";
+                                    require 'model/model_tbodyTableStatistic.php';
+                                } ?>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="row" id="sexContainer" style="height: 15em"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="list-city" role="tabpanel" aria-labelledby="list-city-list">
@@ -90,7 +93,7 @@ require '../Controllers/statistic_traitement.php'
                                     <tbody>
                                     <?php foreach ($contCityDatas as $i => $data) {
                                         $val = "city";
-                                        require 'modal/modal_tbodyTableStatistic.php';
+                                        require 'model/model_tbodyTableStatistic.php';
                                     } ?>
                                     </tbody>
                                 </table>
@@ -113,7 +116,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contStatusDatas as $i => $data) {
                                     $val = "status";
-                                    require 'modal/modal_tbodyTableStatistic.php';
+                                    require 'model/model_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -136,7 +139,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contNationalityDatas as $i => $data) {
                                     $val = "nationality";
-                                    require 'modal/modal_tbodyTableStatistic.php';
+                                    require 'model/model_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -159,7 +162,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contArrivedDatas as $i => $data) {
                                     $val = "arrived";
-                                    require 'modal/modal_tbodyTableStatistic.php';
+                                    require 'model/model_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -182,7 +185,7 @@ require '../Controllers/statistic_traitement.php'
                                 <tbody>
                                 <?php foreach ($contLanguageDatas as $i => $data) {
                                     $val = "firstlanguage";
-                                    require 'modal/modal_tbodyTableStatistic.php';
+                                    require 'model/model_tbodyTableStatistic.php';
                                 } ?>
                                 </tbody>
                             </table>
@@ -192,14 +195,23 @@ require '../Controllers/statistic_traitement.php'
                 </div>
                 <div class="tab-pane fade" id="list-comptabiliter" role="tabpanel"
                      aria-labelledby="list-comptabiliter-list">
-                    bouh
+                    <div class="row">
+                        <div class="col">
+                            <?php foreach ($contComptaDatas as $i => $data) { ?>
+                                <p>Nombre de cotisations: <?= $data['count'] ?> </p>
+                                <p>Somme totale des cotisations: <?= $data['somme'] ?> Euros </p>
+                                <p>Nombre de paiement par chèques: </p>
+                                <p>Nombre de paiement en espèces: </p>
+                            <?php } ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer >
+<footer>
     <?php include 'footer.php' ?>
 </footer>
 <script src="../Vendor/jquery/dist/jquery.min.js"></script>

@@ -29,7 +29,7 @@ if (isset($_POST) AND !empty($_POST)){
 
         if(isset($mdpCrypt) && password_verify($post['password'], $mdpCrypt)){
             $_SESSION['PseudoUser']=$post['pseudo'];
-            $_SESSION['roleUser']=$user[0]['role'];
+            $_SESSION['role']=$user[0]['role'];
             header('Location: ../index.php');
         }else{
             $errors[]='Mot de passe invalide';

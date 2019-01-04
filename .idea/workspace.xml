@@ -2,31 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4b13725-b540-49af-a6a0-7ebd09231a5b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Model/inscriptionCours_Update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/inscriptionCours_traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/inscriptionCours_traitement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/inscriptionCours_Insert.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/inscription_Insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/inscription_Insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/listAtelier_traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/listAtelier_traitement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/logUser_traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/logUser_traitement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/registration_traitement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/registration_traitement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/registration_Insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/registration_Insert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/statistic_Select.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/statistic_Select.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendor/js/charts.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Vendor/js/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vendor/js/function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/inscription.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/inscriptionCours.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/inscriptionCours.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/listAteliers.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/listAteliers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/logUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/logUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/modal_insertAtelier.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/modal_tbodyTableStatistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/modal/modal_tbodyTableStatistic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/model_dataResult.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model/model_registedData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/model_optionInscriptionCours.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model/model_optionInscriptionCours.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/model_tbodyTableAtelier.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model/model_tbodyTableAtelier.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/model_theadTableAtelierl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model/model_theadTableAtelierl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/navbar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/paiement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model/model_payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/modal/modal_tbodyTableStatistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model/model_tbodyTableStatistic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/model/model_tbodyTableAtelier.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/model/model_tbodyTableAtelier.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/recherche.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/recherche.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/statistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/statistic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/updateAtelier.php" beforeDir="false" afterPath="$PROJECT_DIR$/Views/updateAtelier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,38 +43,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="updateAtelier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/updateAtelier.php">
+      <file leaf-file-name="statistic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/statistic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+            <state relative-caret-position="200">
+              <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listAteliers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/listAteliers.php">
+      <file leaf-file-name="statistic_Select.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Model/statistic_Select.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3282">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="431">
+              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model_tbodyTableAtelier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Views/model/model_tbodyTableAtelier.php">
+      <file leaf-file-name="statistic_traitement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controllers/statistic_traitement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="160">
+              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Vendor/js/function.js">
+      <file leaf-file-name="model_tbodyTableStatistic.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Views/model/model_tbodyTableStatistic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="80">
+              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -117,13 +109,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Views/listeAteliers.php" />
         <option value="$PROJECT_DIR$/Views/theadTableAtelier_model.php" />
         <option value="$PROJECT_DIR$/Views/modalInsertAtelier.php" />
         <option value="$PROJECT_DIR$/Model/listAtelier_delete.php" />
         <option value="$PROJECT_DIR$/Views/modal_deleteAtelier.php" />
         <option value="$PROJECT_DIR$/Model/listAtelierEtat_Update.php" />
-        <option value="$PROJECT_DIR$/Controllers/listAtelier_traitement.php" />
         <option value="$PROJECT_DIR$/Views/model_tbodyTableAtelier.php" />
         <option value="$PROJECT_DIR$/Views/model_tbodyTableStatistic.php" />
         <option value="$PROJECT_DIR$/Views/modal_tbodyTableStatistic.php" />
@@ -138,11 +128,7 @@
         <option value="$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/manytomany/connexion.php" />
         <option value="$PROJECT_DIR$/Model/logUser_Select.php" />
         <option value="$PROJECT_DIR$/Model/registration_Select.php" />
-        <option value="$PROJECT_DIR$/Model/registration_Insert.php" />
-        <option value="$PROJECT_DIR$/Controllers/logUser_traitement.php" />
-        <option value="$PROJECT_DIR$/Controllers/registration_traitement.php" />
         <option value="$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/Exercicie_Php/autorisation_utilisateur/correction/errors/erreur.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Views/footer.php" />
         <option value="$PROJECT_DIR$/Views/navbar.php" />
         <option value="$PROJECT_DIR$/Controllers/inscriptionCours_traitement.php" />
@@ -150,24 +136,30 @@
         <option value="$PROJECT_DIR$/Controllers/inscription_traitement.php" />
         <option value="$PROJECT_DIR$/Model/inscriptionCours_Insert.php" />
         <option value="$PROJECT_DIR$/Model/inscriptionCours_Update.php" />
-        <option value="$PROJECT_DIR$/Model/statistic_Select.php" />
         <option value="$PROJECT_DIR$/Model/recherche_Select.php" />
         <option value="$PROJECT_DIR$/Views/model_registedData.php" />
         <option value="$PROJECT_DIR$/Views/model/model_footer.php" />
-        <option value="$PROJECT_DIR$/Views/recherche.php" />
         <option value="$PROJECT_DIR$/Controllers/updateAtelier_traitement.php" />
         <option value="$PROJECT_DIR$/Model/updateAtelier_Select.php" />
         <option value="$PROJECT_DIR$/Model/updateAtelier_Update.php" />
         <option value="$PROJECT_DIR$/Views/model/model_navbar.php" />
-        <option value="$PROJECT_DIR$/Views/registration.php" />
-        <option value="$PROJECT_DIR$/Views/inscriptionCours.php" />
-        <option value="$PROJECT_DIR$/Views/logUser.php" />
-        <option value="$PROJECT_DIR$/Views/statistic.php" />
-        <option value="$PROJECT_DIR$/Views/updateAtelier.php" />
         <option value="$PROJECT_DIR$/Views/inscription.php" />
-        <option value="$PROJECT_DIR$/Views/listAteliers.php" />
+        <option value="$PROJECT_DIR$/Controllers/listAtelier_traitement.php" />
         <option value="$PROJECT_DIR$/Views/model/model_tbodyTableAtelier.php" />
         <option value="$PROJECT_DIR$/Vendor/js/function.js" />
+        <option value="$PROJECT_DIR$/Views/inscriptionCours.php" />
+        <option value="$PROJECT_DIR$/Views/listAteliers.php" />
+        <option value="$PROJECT_DIR$/Views/recherche.php" />
+        <option value="$PROJECT_DIR$/Views/registration.php" />
+        <option value="$PROJECT_DIR$/Views/updateAtelier.php" />
+        <option value="$PROJECT_DIR$/Controllers/logUser_traitement.php" />
+        <option value="$PROJECT_DIR$/Model/registration_Insert.php" />
+        <option value="$PROJECT_DIR$/Controllers/registration_traitement.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Views/logUser.php" />
+        <option value="$PROJECT_DIR$/Views/model/model_tbodyTableStatistic.php" />
+        <option value="$PROJECT_DIR$/Views/statistic.php" />
+        <option value="$PROJECT_DIR$/Model/statistic_Select.php" />
       </list>
     </option>
   </component>
@@ -177,7 +169,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="664" />
     <option name="width" value="438" />
     <option name="height" value="462" />
@@ -247,8 +239,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Projet\Projet pro\Bdd_atoutsCours\bdd-asso\Views" />
       <recent name="C:\xampp\htdocs\Projet\Projet pro\Bdd_atoutsCours\bdd-asso\Views\model" />
+      <recent name="C:\xampp\htdocs\Projet\Projet pro\Bdd_atoutsCours\bdd-asso\Views" />
       <recent name="C:\xampp\htdocs\Projet\Projet pro\Bdd_atoutsCours\bdd-asso\Views\modal" />
       <recent name="C:\xampp\htdocs\Projet\Projet pro\Bdd_atoutsCours\bdd-asso\Controllers" />
       <recent name="C:\xampp\htdocs\Projet\Projet pro\Bdd_atoutsCours\bdd-asso\Model" />
@@ -284,12 +276,12 @@
       <workItem from="1544209463229" duration="24851000" />
       <workItem from="1544620131265" duration="21790000" />
       <workItem from="1545037567592" duration="58845000" />
-      <workItem from="1545816353420" duration="40498000" />
+      <workItem from="1545816353420" duration="50825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208109000" />
+    <option name="totallyTimeSpent" value="218436000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -302,7 +294,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49731663" visible="true" weight="0.23076923" />
@@ -387,28 +379,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Views/htmlDown.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/htmlUp.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/qdsfdt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/manytomany/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/manytomany/connexion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -449,27 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/logUser_traitement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/registration_traitement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/registration_Insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="93" selection-start-line="1" selection-start-column="93" selection-end-line="1" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/Exercicie_Php/autorisation_utilisateur/correction/errors/erreur.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -491,21 +440,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htacces">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Views/navSlide.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/inscriptionCours_Select.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/listAtelierEtat_Update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/inscription_Insert.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -528,24 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/statistic_Select.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="51" lean-forward="true" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Controllers/inscriptionCours_traitement.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/statistic_traitement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -563,13 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="55" column="96" selection-start-line="55" selection-start-column="96" selection-end-line="55" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/modal/modal_tbodyTableStatistic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -593,13 +511,6 @@
     <entry file="file://$PROJECT_DIR$/Views/model/model_payment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-240" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/updateAtelier_Select.php">
@@ -637,76 +548,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/inscriptionCours.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="181" column="33" lean-forward="true" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/logUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="51" column="33" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/statistic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="202" column="19" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/inscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/recherche.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Vendor/js/charts.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/updateAtelier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="53" column="33" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.htacces">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Views/listAteliers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3282">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Model/listAtelier_delete.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Views/model/model_tbodyTableAtelier.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <caret line="19" column="108" lean-forward="true" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/listAtelierEtat_Update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/listAtelier_traitement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vendor/js/function.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="180">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/Exercicie_Php/autorisation_utilisateur/correction/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-920" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Apprentissage/framwoksPhp/phpCours/Exercicie_Php/autorisation_utilisateur/correction/liste.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="105" lean-forward="true" selection-start-line="10" selection-end-line="10" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/updateAtelier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3420">
+          <caret line="171" column="19" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/inscriptionCours.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/listAteliers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/recherche.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/registration_traitement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/logUser_traitement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="32" column="45" lean-forward="true" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/registration_Insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/logUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="70" column="4" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/model/model_tbodyTableStatistic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Views/statistic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/statistic_traitement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/statistic_Select.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
         </state>
       </provider>
     </entry>

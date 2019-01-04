@@ -12,7 +12,7 @@ require '../Controllers/recherche_traitement.php'
 </head>
 <body>
 <header>
-    <?php include 'model/model_navbar.php' ?>
+    <?php include 'navbar.php' ?>
 </header>
 
 <section class="container mt-5">
@@ -46,7 +46,7 @@ require '../Controllers/recherche_traitement.php'
 </section>
 
 <footer>
-    <?php include 'model/model_footer.php' ?>
+    <?php include 'footer.php' ?>
 </footer>
 <script src="../Vendor/jquery/dist/jquery.min.js"></script>
 <script src="../Vendor/js/bootstrap.js"></script>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../Controllers/logUser_traitement.php'
 ?>
 <!DOCTYPE html>
