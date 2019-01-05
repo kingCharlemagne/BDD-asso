@@ -9,7 +9,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form action="" method="post">
+            <form method="post">
                 <div class="modal-body">
                     <label for="categorie">Catégorie</label>
                     <select class="custom-select" id="categorie" name="categorie">

@@ -21,6 +21,7 @@ require '../Controllers/logUser_traitement.php'
         liste des erreurs :
         <?php foreach ($errors as $error) {
             echo $error ?>
+            |
         <?php } ?>
     </div>
 <?php } ?>

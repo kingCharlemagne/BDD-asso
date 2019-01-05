@@ -7,6 +7,3 @@ $updateAtelier->bindValue(':hf',$post['horaireEnd']);
 $updateAtelier->bindValue(':benevole',$post['benevole']);
 $updateAtelier->bindValue(':remplacent',$post['remplacent']);
 $updateAtelier->bindValue(':id',htmlspecialchars($_GET['id']));
-if ($updateAtelier->execute()){
-    header('Location: listAteliers.php');
-}

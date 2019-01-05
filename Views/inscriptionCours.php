@@ -16,18 +16,21 @@ require '../Controllers/inscriptionCours_traitement.php'
 <header>
     <?php include 'navbar.php' ?>
 </header>
-<?php if (!empty($errors)) { ?>
-    <div class="alert alert-danger col-12 text-center" role="alert">
-        liste des erreurs :
-        <?php foreach ($errors as $error) {
-            echo $error ?>
-            |
+
+<section class="mt-4">
+    <div class="row">
+        <?php if (!empty($errors)) { ?>
+            <div class="alert alert-danger col-12 text-center" role="alert">
+                liste des erreurs :
+                <?php foreach ($errors as $error) {
+                    echo $error ?>
+                    |
+                <?php } ?>
+            </div>
         <?php } ?>
     </div>
-<?php } ?>
-<section class="mt-4">
     <div class="row offset-2 col-8 offset-2 justify-content-center">
-        <div class="card">
+        <div class="card border-dark mb-3">
             <h5 class="card-header text-center">Inscription 2/2</h5>
             <div class="card-body">
                 <h5 class="text-center">Ateliers</h5>

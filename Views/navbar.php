@@ -31,12 +31,12 @@ require '../Controllers/deconnection_traitement.php'
             <ul class="navbar-nav">
                 <?php if ($_SESSION['role'] == 'ROLE_ADMIN'){ ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="registration.php">Enregistrement utilisateur</a>
+                    <a class="nav-link" href="registration.php">Ajouter un utilisateur</a>
                 </li>
                 <?php } ?>
                 <li class="nav-item">
                     <form method="get">
-                        <button class="btn btn-light" type="submit" name="deco"><!--Ajouter une icone-->déco</button>
+                        <button class="btn btn-light" type="submit" name="deco"><img src="../Vendor/img/fermer-30.png" alt="Déconnexion"></button>
                     </form>
                 </li>
             </ul>

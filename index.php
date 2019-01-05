@@ -18,12 +18,12 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
                 <ul class="navbar-nav">
                     <?php if ($_SESSION['role'] == 'ROLE_ADMIN'){ ?>
                         <li class="nav-item">
-                            <a class="nav-link" href="Views/registration.php">Enregistrement utilisateur</a>
+                            <a class="nav-link" href="Views/registration.php">Ajouter un utilisateur</a>
                         </li>
                     <?php } ?>
                     <li class="nav-item">
                         <form method="get">
-                            <button class="btn btn-light" type="submit" name="deco"><!--Ajouter une icone-->déco</button>
+                            <button class="btn btn-light" type="submit" name="deco"><img src="Vendor/img/fermer-30.png" alt="Déconnexion"></button>
                         </form>
                     </li>
                 </ul>
@@ -37,7 +37,7 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
             <div class="card bg-light mb-3" style="width: 18rem;">
                 <div class="card-header">Inscription apprenant</div>
                 <div class="card-body">
-                    <img src="Vendor/img/plus-64.png" width="40" height="40" alt="icone inscription">
+                    <img src="Vendor/img/plus-40.png" width="40" height="40" alt="icone inscription">
                     <br>
                     <a class="btn btn-outline-dark mt-2" href="Views/inscription.php">Ajout</a>
                 </div>

@@ -42,9 +42,24 @@ if (!empty($_POST) AND isset($_POST)){
 
 
     if (empty($errors)){
+        switch ($post['jour']){
+            case "lundi":
+                $id_jour=1;
+                break;
+            case "mardi":
+                $id_jour=2;
+                break;
+            case "mercredi":
+                $id_jour=3;
+                break;
+            case "jeudi":
+                $id_jour=4;
+                break;
+            case "vendredi":
+                $id_jour=5;
+                break;
+        }
        require '../Model/modalAtelier_Insert.php';
     }
-
-    //faire l'affichage des erreurs dans la views
 
 }

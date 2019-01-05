@@ -53,7 +53,7 @@ require '../Controllers/registration_traitement.php'
     </div>
 </section>
 
-<footer>
+<footer class="fixed-bottom">
   <?php include 'footer.php'?>
 </footer>
 

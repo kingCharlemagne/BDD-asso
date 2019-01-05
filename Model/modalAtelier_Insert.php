@@ -1,6 +1,7 @@
 <?php
-$insertAtelier=$bdd->prepare('INSERT INTO ateliers(categorie,jour, atelier, horaire_debut, horaire_fin, benevole, remplacent) VALUES (:categorie, :jour,:atelier,:horaireDebut,:horaireFin,:benevole,:remplacent)');
+$insertAtelier=$bdd->prepare('INSERT INTO ateliers(categorie,id_jour,jour, atelier, horaire_debut, horaire_fin, benevole, remplacent) VALUES (:categorie, :idJour, :jour,:atelier,:horaireDebut,:horaireFin,:benevole,:remplacent)');
 $insertAtelier->bindValue(':categorie',$post['categorie']);
+$insertAtelier->bindValue(':idJour',$id_jour);
 $insertAtelier->bindValue(':jour',$post['jour']);
 $insertAtelier->bindValue(':atelier',$post['atelier']);
 $insertAtelier->bindValue(':horaireDebut',$post['horaireStart']);
