@@ -1,3 +1,6 @@
+<?php
+require '../Controllers/deconnection_traitement.php'
+?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="../index.php">
         <button type="button" class="btn btn-light"><img src="../Vendor/img/accueil-50.png" width="30" height="30"
@@ -23,5 +26,20 @@
                 <a class="nav-link" href="statistic.php">Statistique</a>
             </li>
         </ul>
+
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <?php if ($_SESSION['role'] == 'ROLE_ADMIN'){ ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="registration.php">Enregistrement utilisateur</a>
+                </li>
+                <?php } ?>
+                <li class="nav-item">
+                    <form method="get">
+                        <button class="btn btn-light" type="submit" name="deco"><!--Ajouter une icone-->déco</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

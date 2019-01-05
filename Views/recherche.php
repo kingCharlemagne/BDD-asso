@@ -1,6 +1,7 @@
 <?php
 session_start();
-require '../Controllers/recherche_traitement.php'
+if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SESSION['role'] == 'ROLE_ADMIN')) {
+    require '../Controllers/recherche_traitement.php'
 ?>
 
 <!doctype html>
@@ -54,4 +55,7 @@ require '../Controllers/recherche_traitement.php'
 </body>
 </html>
 
-
+    <?php
+} else {
+    header('location:Views/logUser.php');
+} ?>
