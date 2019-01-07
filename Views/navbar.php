@@ -1,8 +1,8 @@
 <?php
-require '../Controllers/deconnection_traitement.php'
+require '../Controllers/deconnexion_traitement.php'
 ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="../index.php">
+    <a class="navbar-brand" href="accueil.php">
         <button type="button" class="btn btn-light"><img src="../Vendor/img/accueil-50.png" width="30" height="30"
                                                          class="d-inline-block align-top" alt="Accueil"></button>
         Accueil

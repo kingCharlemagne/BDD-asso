@@ -1,6 +1,4 @@
 <?php
-require '../Model/bddLog.php';
-
 // ALPHA
 
 $lundiAlpha=$bdd->query('SELECT * FROM ateliers WHERE categorie="alpha" AND jour="lundi"');

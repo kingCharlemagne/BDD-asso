@@ -4,7 +4,7 @@
     <div class="">
         <ul class="list-inline">
             <li class="list-inline-item">© 2019 Development <a href="http://bilalbelmehdi.fr/">Bilal Belmehdi</a>.</li>
-            <li class="list-inline-item"><a href="../index.php">Accueil</a></li>
+            <li class="list-inline-item"><a href="accueil.php">Accueil</a></li>
             <li class="list-inline-item"><a href="inscription.php">Inscription</a></li>
         </ul>
     </div>

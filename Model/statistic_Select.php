@@ -1,10 +1,9 @@
 <?php
-require 'bddLog.php';
-
 /////////////////////////////////////////////Inscription//////////////////////////////////////////////////////////
 $contInscription=$bdd->query('SELECT COUNT(id) as count FROM apprenant WHERE create_at  LIKE "%' . $date . '%"');
 $contInscription->execute();
 $contInscriptionDatas=$contInscription->fetchAll();
+
 
 //////////////////////////////////////////////////Sex//////////////////////////////////////////////////////
 $contSex=$bdd->query('SELECT sex,COUNT(id) as count FROM apprenant WHERE create_at  LIKE "%' . $date . '%"  GROUP BY sex');

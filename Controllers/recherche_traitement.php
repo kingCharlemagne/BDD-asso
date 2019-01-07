@@ -1,5 +1,5 @@
 <?php
-require '../Model/bddLog.php';
+require 'bddLog.php';
 
 if (!empty($_GET) AND isset($_GET)) {
     $get=[];
@@ -25,8 +25,9 @@ if (!empty($_GET) AND isset($_GET)) {
     }
 
     $search=$_GET['search'];
-
     require '../Model/recherche_Select.php';
+
+    print_r($results);
 
 
 }

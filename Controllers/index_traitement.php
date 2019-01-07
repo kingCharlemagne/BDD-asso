@@ -1,4 +1,5 @@
 <?php
+require 'Controllers/bddLog.php';
 if (isset($_POST) AND !empty($_POST)){
     $post=[];
     $errors =[];
@@ -16,8 +17,7 @@ if (isset($_POST) AND !empty($_POST)){
     }
 
     if (empty($errors)){
-
-        require '../Model/logUser_Select.php';
+        require 'Model/logUser_Select.php';
 
         if (count($user)===1){
 
@@ -30,7 +30,7 @@ if (isset($_POST) AND !empty($_POST)){
         if(isset($mdpCrypt) && password_verify($post['password'], $mdpCrypt)){
             $_SESSION['PseudoUser']=$post['pseudo'];
             $_SESSION['role']=$user[0]['role'];
-            header('Location: ../index.php');
+            header('Location: Views/accueil.php');
         }else{
             $errors[]='Mot de passe invalide';
         }

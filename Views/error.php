@@ -1,4 +1,5 @@
 <?php
+session_start();
 require '../Controllers/error_traitement.php'
 ?>
 <!DOCTYPE html>
@@ -6,12 +7,22 @@ require '../Controllers/error_traitement.php'
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
-    <title>BDD | Inscription</title>
+    <title>BDD | error </title>
 </head>
 <body>
+<header>
+    <?php require 'navbar.php'?>
+</header>
 
-    <p><?= $error_msg?></p>
+    <section class="text-center mt-4">
 
-   <a href="../index.php">Retour à l'accueil</a>
+        <p><?= $error_msg?></p>
+
+        <a href="accueil.php">Retour à l'accueil</a>
+    </section>
+
+<footer class="fixed-bottom">
+    <?php require 'footer.php'?>
+</footer>
 </body>
 </html>

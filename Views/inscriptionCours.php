@@ -193,5 +193,5 @@ require '../Controllers/inscriptionCours_traitement.php'
 </html>
     <?php
 } else {
-    header('location:Views/logUser.php');
+    header('location:../index.php');
 } ?>

@@ -1,6 +1,5 @@
 <?php
-require '../Model/bddLog.php';
-
+require 'bddLog.php';
 //Select
 require '../Model/inscriptionCours_Select.php';
 

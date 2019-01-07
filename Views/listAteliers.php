@@ -26,7 +26,7 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
             <?php } ?>
         </div>
     <?php } ?>
-    <section class="mt-4">
+    <section class="mt-4 container">
         <div class="d-flex mr-3 justify-content-end">
             <!-- Button modal -->
             <button type="button" class="btn bg-success text-white" data-toggle="modal" data-target="#insertAtelier">
@@ -56,7 +56,7 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
         <div class="tab-content" id="pills-tabContent">
 
             <!--Alpha Francophone-->
-            <div class="tab-pane fade show active offset-2 col-8 offset-2" id="alpha" role="tabpanel"
+            <div class="tab-pane fade show active" id="alpha" role="tabpanel"
                  aria-labelledby="pills-alpha">
                 <div class="row">
                     <div class="col-4">
@@ -153,7 +153,7 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
             </div>
 
             <!--FLE intermédiaire-->
-            <div class="tab-pane fade offset-2 col-8 offset-2" id="intermediaire" role="tabpanel"
+            <div class="tab-pane fade" id="intermediaire" role="tabpanel"
                  aria-labelledby="pills-intermediaire-tab">
                 <div class="row">
                     <div class="col-4">
@@ -257,7 +257,7 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
             </div>
 
             <!--FLE Débutant-->
-            <div class="tab-pane fade offset-2 col-8 offset-2" id="debutant" role="tabpanel"
+            <div class="tab-pane fade" id="debutant" role="tabpanel"
                  aria-labelledby="pills-debutant-tab">
                 <div class="row">
                     <div class="col-4">
@@ -365,5 +365,5 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
     </html>
     <?php
 } else {
-    header('location:Views/logUser.php');
+    header('location:../index.php');
 } ?>

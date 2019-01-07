@@ -1,6 +1,4 @@
 <?php
-require '../Model/bddLog.php';
-
 if (!empty($_POST) AND isset($_POST)){
     $errors=[];
     $post=[];
@@ -59,6 +57,7 @@ if (!empty($_POST) AND isset($_POST)){
                 $id_jour=5;
                 break;
         }
+        require 'bddLog.php';
        require '../Model/modalAtelier_Insert.php';
     }
 

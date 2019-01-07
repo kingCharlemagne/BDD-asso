@@ -1,87 +1,58 @@
 <?php
 session_start();
-if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SESSION['role'] == 'ROLE_ADMIN')) {
-    ?>
-    <!doctype html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>BDD</title>
-        <link rel="stylesheet" href="Vendor/css/bootstrap.min.css">
-    </head>
-    <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1">Navbar</span>
+require 'Controllers/logUser_traitement.php'
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BDD | Login </title>
+    <link rel="stylesheet" href="Vendor/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-light bg-light">
+        <p class="navbar-brand">BDD</p>
+    </nav>
+</header>
 
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav">
-                    <?php if ($_SESSION['role'] == 'ROLE_ADMIN'){ ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Views/registration.php">Ajouter un utilisateur</a>
-                        </li>
-                    <?php } ?>
-                    <li class="nav-item">
-                        <form method="get">
-                            <button class="btn btn-light" type="submit" name="deco"><img src="Vendor/img/fermer-30.png" alt="Déconnexion"></button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<?php if (!empty($errors) AND isset($errors)) { ?>
+    <div class="alert alert-danger col-12 text-center mt-3" role="alert">
+        liste des erreurs :
+        <?php foreach ($errors as $error) {
+            echo $error ?>
+            |
+        <?php } ?>
+    </div>
+<?php } ?>
 
-    <section class="container mt-5">
-        <div class="row justify-content-around text-center">
-
-            <div class="card bg-light mb-3" style="width: 18rem;">
-                <div class="card-header">Inscription apprenant</div>
-                <div class="card-body">
-                    <img src="Vendor/img/plus-40.png" width="40" height="40" alt="icone inscription">
-                    <br>
-                    <a class="btn btn-outline-dark mt-2" href="Views/inscription.php">Ajout</a>
-                </div>
-            </div>
-
-
-            <div class="card text-white bg-info mb-3" style="width: 18rem;">
-                <div class="card-header">Liste des ateliers</div>
-                <div class="card-body">
-                    <img src="Vendor/img/atelier-50.png" width="40" height="40" alt="icone liste des ateliers">
-                    <br>
-                    <a class="btn btn-outline-light mt-2" href="Views/listAteliers.php">Consulter</a>
-                </div>
-            </div>
-
-            <div class="card text-white bg-warning mb-3" style="width: 18rem;">
-                <div class="card-header">Moteur de recherche</div>
-                <div class="card-body">
-                    <img src="Vendor/img/recherche-50.png" width="40" height="40" alt="icone recherche">
-                    <br>
-                    <a class="btn btn-outline-light mt-2" href="Views/recherche.php">Recherche</a>
-                </div>
-            </div>
-
-            <div class="card text-white bg-success mb-3" style="width: 18rem;">
-                <div class="card-header">Statistiques</div>
-                <div class="card-body">
-                    <img src="Vendor/img/statistics-50.png" width="40" height="40" alt="icone statistique">
-                    <br>
-                    <a class="btn btn-outline-light mt-2" href="Views/statistic.php">Consulter</a>
-                </div>
-            </div>
-
+<section class="d-flex justify-content-center mt-5">
+    <div class="card text-center">
+        <div class="card-header">
+            Connexion
         </div>
-    </section>
+        <form method="post">
+            <div class="card-body">
 
-    <footer class="fixed-bottom">
-        <?php require "Views/footer.php" ?>
-    </footer>
+                <div class="form-group">
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" class="form-control" id="pseudo" name="pseudo" placeholder="Saisir un pseudo" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Saisir un mot de passe" required>
+                </div>
+            </div>
+            <div class="card-footer text-muted">
+                <button type="submit" class="btn btn-success">Connexion</button>
+            </div>
+        </form>
+    </div>
+</section>
 
-    </body>
-    </html>
+<footer class="fixed-bottom">
+    <?php include 'Views/footer.php' ?>
+</footer>
 
-<?php
-} else {
-    header('location:Views/logUser.php');
-} ?>
+</body>
+</html>

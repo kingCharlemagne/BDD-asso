@@ -1,5 +1,4 @@
 <?php
-
 $inscriptionSecondStep=$bdd->prepare('UPDATE apprenant SET first_lesson = :firstLesson,second_lesson = :secondLesson,last_lesson = :lastLesson,receipt_numbers = :nRecu,type_payment = :paiement,price = :montant, create_at=:date WHERE id = :id');
 $inscriptionSecondStep->bindValue(':firstLesson',htmlspecialchars($_POST['lessonOne']));
 $inscriptionSecondStep->bindValue(':secondLesson',htmlspecialchars($_POST['lessonTwo']));

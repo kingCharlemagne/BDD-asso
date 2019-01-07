@@ -23,13 +23,13 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        <p>Atelier N°1: <?= $data['first_lesson'] ?></p>
+                        <p>Atelier N°1: <?= $data['atelier'] ?></p>
                     </div>
                     <div class="col">
-                        <p>Atelier N°2: <?= $data['second_lesson'] ?></p>
+                        <p>Atelier N°2: <?= $data[''] ?></p>
                     </div>
                     <div class="col">
-                        <p>Atelier N°3: <?= $data['last_lesson'] ?></p>
+                        <p>Atelier N°3: <?= $data[''] ?></p>
                     </div>
                 </div>
                 <div class="row text-center">

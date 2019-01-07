@@ -43,8 +43,8 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
                        href="#list-arrived" role="tab" aria-controls="arrived">Date d'arriver</a>
                     <a class="list-group-item list-group-item-action" id="list-language-list" data-toggle="list"
                        href="#list-language" role="tab" aria-controls="language">Langage</a>
-                    <a class="list-group-item list-group-item-action" id="list-contabiliter-list" data-toggle="list"
-                       href="#list-comptabiliter" role="tab" aria-controls="comptabiliter">Comptabiliter</a>
+                    <a class="list-group-item list-group-item-action" id="list-comptabilite-list" data-toggle="list"
+                       href="#list-comptabilite" role="tab" aria-controls="comptabilite">Comptabilité</a>
                 </div>
             </div>
             <div class="col-8">
@@ -56,6 +56,8 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
                                 <?php foreach ($contInscriptionDatas as $i => $data) { ?>
                                     <p>Apprenant inscrit: <?= $data['count'] ?></p>
                                 <?php } ?>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -195,8 +197,8 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
                         </div>
 
                     </div>
-                    <div class="tab-pane fade" id="list-comptabiliter" role="tabpanel"
-                         aria-labelledby="list-comptabiliter-list">
+                    <div class="tab-pane fade" id="list-comptabilite" role="tabpanel"
+                         aria-labelledby="list-comptabilite-list">
                         <div class="row">
                             <div class="col">
                                 <?php foreach ($contComptaDatas as $i => $data) { ?>
@@ -223,5 +225,5 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
 
     <?php
 } else {
-    header('location:Views/logUser.php');
+    header('location:../index.php');
 } ?>

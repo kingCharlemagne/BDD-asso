@@ -177,5 +177,5 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
 
     <?php
 } else {
-    header('location:Views/logUser.php');
+    header('location:../index.php');
 } ?>

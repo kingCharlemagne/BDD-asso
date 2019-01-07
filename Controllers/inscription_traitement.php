@@ -1,8 +1,5 @@
 <?php
-require '../Model/bddLog.php';
-
-
-
+require 'bddLog.php';
 if (!empty($_POST) AND isset($_POST)){
     $post=[];
     $errors=[];

@@ -1,4 +1,5 @@
 <?php
+require 'bddLog.php';
 //////////////////////////////////Select//////////////////////////////////////////////////////////////
 if (isset($_GET['id']) AND !empty($_GET['id']) AND is_numeric($_GET['id'])){
     require '../Model/updateAtelier_Select.php';

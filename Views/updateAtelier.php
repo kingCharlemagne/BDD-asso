@@ -60,5 +60,5 @@ require '../Controllers/updateAtelier_traitement.php';
 </html>
     <?php
 } else {
-    header('location:Views/logUser.php');
+    header('location:../index.php');
 } ?>
