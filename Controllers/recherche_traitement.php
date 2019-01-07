@@ -2,6 +2,8 @@
 require 'bddLog.php';
 
 if (!empty($_GET) AND isset($_GET)) {
+
+    if (isset($_GET['selectCategorie']) AND isset($_GET['search'])){
     $get=[];
 
     // Nettoyage des inputs
@@ -29,5 +31,13 @@ if (!empty($_GET) AND isset($_GET)) {
 
     print_r($results);
 
+    }
 
+/////////////////////////////////////DELETE apprenant//////////////////////////////////////////////////////
+    if (isset($_GET['id']) AND !empty($_GET['id']) AND is_numeric($_GET['id'])){
+        require '../Model/rechercheApprenant_delete.php';
+        if ($deleteAtelier->execute()) {
+            header('Location: recherche.php');
+        }
+    }
 }

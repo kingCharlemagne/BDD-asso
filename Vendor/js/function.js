@@ -8,6 +8,14 @@ function typeSearch() {
     document.getElementById('searchInput').setAttribute('type','search');
 }
 
+function deleteApprenant(idApprenant) {
+    let conf=confirm("Confirmer pour supprimer l'apprenant");
+
+    if (conf===true) {
+        document.location.href="recherche.php?id="+idApprenant;
+    }
+}
+
 ////////////////////////////////////////listAtelier.php/////////////////////////////////////////////////
 
 function switchState(i,id,state) {
@@ -18,7 +26,7 @@ function switchState(i,id,state) {
     }
 }
 
-function deleteMsg(idAtelier) {
+function deleteAtelier(idAtelier) {
     let conf=confirm("Confirmer pour supprimer l'atelier");
 
     if (conf===true) {

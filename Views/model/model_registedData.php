@@ -9,7 +9,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-9 ">
+            <div class="col-8 ">
                 <div class="row text-center">
                     <div class="col">
                         <p>Nom: <?= $data['name'] ?></p>
@@ -44,10 +44,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-2">
                 <div class="row text-center">
-                    <div class="col">
-                        <button class="btn btn-link" type="button" data-toggle="collapse"
+                    <div class="col mt-2 ">
+                        <a href="../updateApprenant.php?id=<?= $data['id'] ?>" class="btn btn-success" style="display: block">Modifier</a>
+                    </div>
+                    <div class="col mt-2">
+                        <button  class="btn btn-danger" onclick="deleteApprenant(<?= $data['id'] ?>)">Supprimer</button>
+                    </div>
+                    <div class="col mt-5">
+                        <button class="btn btn-info" type="button" data-toggle="collapse"
                                 data-target="#<?= $data['name'] . $data['id'] ?>" aria-expanded="true"
                                 aria-controls="<?= $data['name'] . $data['id'] ?>">
                             Détail

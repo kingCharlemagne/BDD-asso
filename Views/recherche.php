@@ -32,7 +32,7 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
                 </div>
                 <input class="form-control mr-sm-2" type="search" name="search" id="searchInput" aria-label="Search"
                        required>
-                <button class="btn btn-outline-success my-2 my-sm-0" name="subSearch" type="submit">Recherche</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
             </form>
         </nav>
 

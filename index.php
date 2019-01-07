@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'Controllers/logUser_traitement.php'
+require 'Controllers/index_traitement.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">

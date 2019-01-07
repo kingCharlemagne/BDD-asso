@@ -15,7 +15,7 @@
     <div class="form-row mt-2">
         <div class="col">
             <label for="money">Montant</label>
-            <input type="text" class="form-control" id="money" value="50" name="money">
+            <input type="text" class="form-control" id="money" value="60" name="money">
         </div>
         <div class="col">
             <label for="receved">N°de Reçu</label>

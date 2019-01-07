@@ -29,7 +29,7 @@ if (!empty($_POST) AND isset($_POST)){
     if (empty($errors)){
         require '../Model/registration_Insert.php';
         if ($insertUser->execute()){
-            header('Location: ../index.php');
+            header('Location: accueil.php');
         }
     }
 
