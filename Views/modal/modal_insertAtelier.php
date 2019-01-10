@@ -11,6 +11,7 @@
             </div>
             <form method="post">
                 <div class="modal-body">
+
                     <label for="categorie">Catégorie</label>
                     <select class="custom-select" id="categorie" name="categorie">
                         <option selected value="null">Sélectionner</option>
@@ -31,6 +32,10 @@
 
                     <label for="atelier">Atelier</label>
                     <input type="text" class="form-control" id="atelier" name="atelier" required>
+
+                    <label for="adresseAtelier">adresse</label>
+                    <textarea class="form-control" id="adresseAtelier" rows="1" name="address"></textarea>
+
 
                     <div class="row">
                         <div class="col">

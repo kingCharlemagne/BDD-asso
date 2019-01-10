@@ -16,6 +16,11 @@ function deleteApprenant(idApprenant) {
     }
 }
 
+function printFile() {
+    let documentPrint= document.getElementById('printFile');
+    window.print();
+}
+
 ////////////////////////////////////////listAtelier.php/////////////////////////////////////////////////
 
 function switchState(i,id,state) {

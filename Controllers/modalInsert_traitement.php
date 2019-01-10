@@ -17,9 +17,14 @@ if (!empty($_POST) AND isset($_POST)){
         $errors[]='Champ Jour vide, choisir une option';
     }
 
-    //lieu
+    //atelier
     if(empty($post['atelier']) OR !isset($post['atelier'])){
-        $errors[]='Champ lieu vide, saisir une valeur';
+        $errors[]='Champ lieu vide, saisir un lieu';
+    }
+
+    //adresse
+    if(empty($post['address']) OR !isset($post['address'])){
+        $errors[]='Champ address vide, saisir une adresse';
     }
 
     //horaireStart

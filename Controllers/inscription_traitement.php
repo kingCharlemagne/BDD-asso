@@ -97,7 +97,7 @@ if (!empty($_POST) AND isset($_POST)){
     if (empty($errors)){
         require '../Model/inscription_Insert.php';
         if ($inscriptionFirstStep->execute()){
-            $_SESSION['id_student']= $bdd->lastInsertId();
+            $_SESSION['id_apprenant']= $bdd->lastInsertId();
             header('Location: inscriptionCours.php');
         }else{
             $errors[]="Une erreur est survenue l'or de l'enregistrement des données, ressayer  si le problème persiste contacter le webmaster" ;

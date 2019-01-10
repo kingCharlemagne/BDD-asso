@@ -26,10 +26,10 @@
                         <p>Atelier N°1: <?= $data['atelier'] ?></p>
                     </div>
                     <div class="col">
-                        <p>Atelier N°2: <?= $data[''] ?></p>
+                        <p>Atelier N°2: <?= $data['atelier'] ?></p>
                     </div>
                     <div class="col">
-                        <p>Atelier N°3: <?= $data[''] ?></p>
+                        <p>Atelier N°3: <?= $data['atelier'] ?></p>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -47,7 +47,10 @@
             <div class="col-2">
                 <div class="row text-center">
                     <div class="col mt-2 ">
-                        <a href="../updateApprenant.php?id=<?= $data['id'] ?>" class="btn btn-success" style="display: block">Modifier</a>
+                        <a href="inscriptionFile.php" class="btn btn-info" style="display: block">Fiche d'inscription</a>
+                    </div>
+                    <div class="col mt-2 ">
+                        <a href="updateApprenant.php?id=<?= $data['id'] ?>"  class="btn btn-success" style="display: block">Modifier</a>
                     </div>
                     <div class="col mt-2">
                         <button  class="btn btn-danger" onclick="deleteApprenant(<?= $data['id'] ?>)">Supprimer</button>
