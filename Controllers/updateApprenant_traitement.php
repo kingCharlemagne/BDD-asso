@@ -2,16 +2,20 @@
 require 'bddLog.php';
 //////////////////////////////////Select//////////////////////////////////////////////////////////////
 if (isset($_GET['id']) AND !empty($_GET['id']) AND is_numeric($_GET['id'])){
+    require '../Model/inscriptionCours_Select.php';
     require '../Model/updateApprenant_Select.php';
 }
 //////////////////////////////////Update//////////////////////////////////////////////////////////////
-if (isset($_POST) AND !empty($_POST) AND isset($_GET['id']) AND !empty($_GET['id'])AND is_numeric($_GET['id'])){
+if (!empty($_POST) AND isset($_POST) and isset($_GET['id']) AND !empty($_GET['id']) AND is_numeric($_GET['id'])){
     $post=[];
     foreach ($_POST as $key=>$value){
-        $post[$key]= htmlspecialchars(trim($value));
+        $post[$key]= strip_tags(trim($value));
     }
+
+    var_dump($post);
+    var_dump($_GET['id']);
     require '../Model/updateApprenant_Update.php';
-    if ($updateAtelier->execute()){
+    if ($updateApprenant->execute()){
         header('Location: recherche.php');
     }
 }

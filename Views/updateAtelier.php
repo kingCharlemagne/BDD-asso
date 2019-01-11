@@ -7,7 +7,7 @@ require '../Controllers/updateAtelier_traitement.php';
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BDD|Moteur de recherche</title>
+    <title>BDD|Modifier l'atelier</title>
     <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
 </head>
 <body>

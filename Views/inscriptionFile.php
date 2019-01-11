@@ -11,7 +11,7 @@ require '../Controllers/inscriptionFile_traitement.php'
         <title>Fiche d'inscription| Association Atouts cours</title>
         <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
     </head>
-    <body>
+    <body style="font-size: 1.3em">
     <div class="row justify-content-end mr-3">
         <button type="button" class="btn btn-link" onclick="printFile()">Imprimer</button>
     </div>
@@ -65,7 +65,7 @@ require '../Controllers/inscriptionFile_traitement.php'
                 <p><span class="text-uppercase font-weight-bold"><?=$data['at3']?></span> <?=$data['adr3']?></p>
             </div>
         </div>
-        <div class="mt-5">
+        <div style="margin-top: 10em">
             <h5 class="text-uppercase">Attention! caution!</h5>
             <p>*Faites tout votre possible pour arriver à l'heure au cours avec un stylo et un cahier.</p>
             <p class="font-italic">Try your best to arrive on time in the course whit a pencil and notebook.</p>

@@ -61,7 +61,7 @@ require '../Controllers/model_registedData_traitement.php';
                         <a href="inscriptionFile.php?id=<?= $data['id'] ?>" class="btn btn-info" style="display: block">Fiche d'inscription</a>
                     </div>
                     <div class="col mt-2 ">
-                        <a href="updateApprenant.php?id=<?= $data['id'] ?>"  class="btn btn-success" style="display: block">Modifier</a>
+                        <a href="updateApprenant.php?id=<?= $data['id'] ?>"  class="btn btn-success" style="display: block">Changer d'atelier</a>
                     </div>
                     <div class="col mt-2">
                         <button  class="btn btn-danger" onclick="deleteApprenant(<?= $data['id'] ?>)">Supprimer</button>
