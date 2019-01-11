@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['PseudoUser']) AND $_SESSION['role'] == 'ROLE_ADMIN') {
+require '../Controllers/logSessionAdmin.php';
 require '../Controllers/registration_traitement.php'
 ?>
 <!DOCTYPE html>
@@ -59,9 +59,3 @@ require '../Controllers/registration_traitement.php'
 
 </body>
 </html>
-
-    <?php
-} else {
-    header('HTTP/1.1 403 Forbidden');
-    header('location:error.php?error=403');
-} ?>

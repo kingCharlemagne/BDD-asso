@@ -1,7 +1,6 @@
 <?php
 session_start();
-if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SESSION['role'] == 'ROLE_ADMIN')) {
-
+require '../Controllers/logSessionUser.php';
     ?>
     <!doctype html>
     <html lang="en">
@@ -79,8 +78,3 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
 
     </body>
     </html>
-
-    <?php
-} else {
-    header('location:../index.php');
-} ?>

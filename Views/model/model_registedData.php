@@ -1,11 +1,22 @@
-<div class="card mt-3">
+<?php
+require '../Controllers/model_registedData_traitement.php';
+?>
+
+
+<div class="card <?= $colorClass ?> mt-3">
     <div class="card-header" id="heading<?= $data['id'] ?>">
         <div class="row">
             <div class="col-2">
                 <div class="row text-center">
                     <div class="col">
-                        <h6>Identifiant</h6>
+                        <h6>Identifiant:</h6>
                         <p><?= $data['id'] ?></p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <h6>Niveau:</h6>
+                        <p class="text-uppercase"><?= $data['categorie'] ?></p>
                     </div>
                 </div>
             </div>
@@ -23,13 +34,13 @@
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        <p>Atelier N°1: <?= $data['atelier'] ?></p>
+                        <p>Atelier N°1: <?= $data['j1'] ?> | <?= $data['at1'] ?></p>
                     </div>
                     <div class="col">
-                        <p>Atelier N°2: <?= $data['atelier'] ?></p>
+                        <p>Atelier N°2: <?= $data['j2'] ?> | <?= $data['at2'] ?></p>
                     </div>
                     <div class="col">
-                        <p>Atelier N°3: <?= $data['atelier'] ?></p>
+                        <p>Atelier N°3: <?= $data['j3'] ?> | <?= $data['at3'] ?></p>
                     </div>
                 </div>
                 <div class="row text-center">
@@ -47,7 +58,7 @@
             <div class="col-2">
                 <div class="row text-center">
                     <div class="col mt-2 ">
-                        <a href="inscriptionFile.php" class="btn btn-info" style="display: block">Fiche d'inscription</a>
+                        <a href="inscriptionFile.php?id=<?= $data['id'] ?>" class="btn btn-info" style="display: block">Fiche d'inscription</a>
                     </div>
                     <div class="col mt-2 ">
                         <a href="updateApprenant.php?id=<?= $data['id'] ?>"  class="btn btn-success" style="display: block">Modifier</a>
@@ -113,15 +124,7 @@
             </div>
             <div class="row text-center">
                 <div class="col">
-                    <p>Cotisation:
-                        <span class="text-success">
-                            <?php if (isset($data['receipt_numbers']) AND !empty($data['receipt_numbers'] AND is_numeric($data['receipt_numbers']))) {
-                                echo "à jour";
-                            } else {
-                                echo "manquante";
-                            } ?>
-                        </span>
-                    </p>
+                    <p>Cotisation: <?= $cotisationStatus ?></p>
                 </div>
             </div>
         </div>

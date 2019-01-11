@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SESSION['role'] == 'ROLE_ADMIN')) {
-    require '../Controllers/recherche_traitement.php'
+require '../Controllers/logSessionUser.php';
+require '../Controllers/recherche_traitement.php'
 ?>
 
 <!doctype html>
@@ -54,8 +54,3 @@ if (isset($_SESSION['PseudoUser']) AND ($_SESSION['role'] == 'ROLE_USER' OR $_SE
 <script src="../Vendor/js/function.js"></script>
 </body>
 </html>
-
-    <?php
-} else {
-    header('location:../index');
-} ?>

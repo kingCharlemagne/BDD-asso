@@ -17,7 +17,7 @@ if (!empty($_GET) AND isset($_GET)) {
         $categorie="surname";
     }
     elseif ($_GET['selectCategorie']==="2"){
-        $categorie="apprenant.id";
+        $categorie="t1.id";
     }
     elseif ($_GET['selectCategorie']==="3"){
         $categorie="born";
@@ -28,10 +28,6 @@ if (!empty($_GET) AND isset($_GET)) {
 
     $search=$_GET['search'];
     require '../Model/recherche_Select.php';
-
-
-        var_dump($results);
-
 
     }
 

@@ -49,10 +49,5 @@ require 'Controllers/index_traitement.php'
         </form>
     </div>
 </section>
-
-<footer class="fixed-bottom">
-    <?php include 'Views/footer.php' ?>
-</footer>
-
 </body>
 </html>
