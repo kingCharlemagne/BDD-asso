@@ -14,6 +14,8 @@ require '../Controllers/inscriptionFile_traitement.php'
     <body style="font-size: 1.3em">
     <div class="row justify-content-end mr-3">
         <button type="button" class="btn btn-link" onclick="printFile()">Imprimer</button>
+        |
+        <a href="accueil.php" class="btn btn-link">Retour</a>
     </div>
     <?php foreach ($apprenantData as $data){ ?>
     <section class="container mt-3">

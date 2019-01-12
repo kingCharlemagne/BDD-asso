@@ -37,6 +37,14 @@ $contLanguage->execute();
 $contLanguageDatas=$contLanguage->fetchAll();
 
 //////////////////////////////////////////////Comptabiliter//////////////////////////////////////////////////////////
-$contCompta=$bdd->query('SELECT COUNT(id)as count,SUM(price) as somme, COUNT(type_payment="cheque") as cheque, COUNT(type_payment="cash") as cash FROM apprenant WHERE create_at  LIKE "%' . $date . '%"');
+$contCompta=$bdd->query('SELECT COUNT(id)as count,SUM(price) as somme  FROM apprenant WHERE create_at  LIKE "%' . $date . '%"');
 $contCompta->execute();
 $contComptaDatas=$contCompta->fetchAll();
+
+$contComptaCheque=$bdd->query('SELECT COUNT(id)as count,SUM(price) as somme FROM apprenant WHERE create_at  LIKE "%' . $date . '%"AND type_payment="cheque"' );
+$contComptaCheque->execute();
+$contComptaChequeDatas=$contComptaCheque->fetchAll();
+
+$contComptaCash=$bdd->query('SELECT COUNT(id)as count,SUM(price) as somme FROM apprenant WHERE create_at  LIKE "%' . $date . '%"AND type_payment="cash"' );
+$contComptaCash->execute();
+$contComptaCashDatas=$contComptaCash->fetchAll();

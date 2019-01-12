@@ -201,11 +201,22 @@ require '../Controllers/statistic_traitement.php'
                          aria-labelledby="list-comptabilite-list">
                         <div class="row">
                             <div class="col">
-                                <?php foreach ($contComptaDatas as $i => $data) { ?>
-                                    <p>Nombre de cotisations: <?= $data['count'] ?> </p>
+                                <?php foreach ($contComptaDatas as $data) { ?>
+                                    <h6>Générale</h6>
+                                    <p>Nombre totale des cotisations: <?= $data['count'] ?> </p>
                                     <p>Somme totale des cotisations: <?= $data['somme'] ?> Euros </p>
-                                    <p>Nombre de paiement par chèques: <?= $data['cheque'] ?></p>
-                                    <p>Nombre de paiement en espèces: <?= $data['cash'] ?></p>
+                                <?php } ?>
+                                    <hr>
+                                <?php foreach ($contComptaChequeDatas as $data) { ?>
+                                    <h6>Paiement par cheque</h6>
+                                    <p>Nombre de paiement par chèques: <?= $data['count'] ?></p>
+                                    <p>Somme totale des paiement par chèques: <?= $data['somme'] ?> Euros </p>
+                                <?php } ?>
+                                    <hr>
+                                <?php foreach ($contComptaCashDatas as $data) { ?>
+                                    <h6>Paiement en espèces</h6>
+                                    <p>Nombre de paiement en espèces: <?= $data['count'] ?></p>
+                                    <p>Somme totale des paiement en espèces: <?= $data['somme'] ?> Euros </p>
                                 <?php } ?>
                             </div>
                         </div>
