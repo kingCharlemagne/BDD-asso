@@ -1,7 +1,7 @@
 <?php
 session_start();
 require '../Controllers/logSessionUser.php';
-require '../Controllers/inscriptionCours_traitement.php'
+require '../Controllers/inscriptionCours_traitement.php';
 ?>
 
 <!doctype html>
@@ -16,7 +16,6 @@ require '../Controllers/inscriptionCours_traitement.php'
     <?php include 'navbar.php' ?>
 </header>
 
-<div class="row">
     <?php if (!empty($errors)) { ?>
         <div class="alert alert-danger col-12 text-center" role="alert">
             liste des erreurs :
@@ -26,7 +25,7 @@ require '../Controllers/inscriptionCours_traitement.php'
             <?php } ?>
         </div>
     <?php } ?>
-</div>
+
 
 <section class="mt-4">
     <div class="row justify-content-center">

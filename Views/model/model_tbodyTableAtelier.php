@@ -17,7 +17,7 @@
     <td><?= $data['benevole'] ?></td>
     <td><?= $data['remplacent'] ?></td>
     <td>
-        <a href="../updateAtelier.php?id=<?= $data['id'] ?>" class="btn btn-success mb-1">Modifier</a>
+        <a href="updateAtelier.php?id=<?= $data['id'] ?>" class="btn btn-success mb-1">Modifier</a>
         <button type="button" onclick="deleteAtelier(<?= $data['id'] ?>)" class="btn btn-danger mt-1" >Supprimer</button>
     </td>
 </tr>

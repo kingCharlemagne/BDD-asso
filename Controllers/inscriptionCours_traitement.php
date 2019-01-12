@@ -35,7 +35,7 @@ if (!empty($_POST) AND isset($_POST)){
     if (empty($errors)){
         require '../Model/inscriptionCours_Update.php';
         if ($inscriptionSecondStep->execute()){
-            header('Location: accueil.php');
+            header('Location: inscriptionFile.php?id='.$_SESSION['id_apprenant']);
         }
     }
 

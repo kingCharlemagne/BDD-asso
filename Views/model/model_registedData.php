@@ -63,9 +63,6 @@ require '../Controllers/model_registedData_traitement.php';
                     <div class="col mt-2 ">
                         <a href="updateApprenant.php?id=<?= $data['id'] ?>"  class="btn btn-success" style="display: block">Changer d'atelier</a>
                     </div>
-                    <div class="col mt-2">
-                        <button  class="btn btn-danger" onclick="deleteApprenant(<?= $data['id'] ?>)">Supprimer</button>
-                    </div>
                     <div class="col mt-5">
                         <button class="btn btn-info" type="button" data-toggle="collapse"
                                 data-target="#<?= $data['name'] . $data['id'] ?>" aria-expanded="true"

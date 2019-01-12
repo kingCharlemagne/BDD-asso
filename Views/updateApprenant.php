@@ -15,6 +15,16 @@ require '../Controllers/updateApprenant_traitement.php';
         <?php include 'navbar.php' ?>
     </header>
 
+    <?php if (!empty($errors)) { ?>
+        <div class="alert alert-danger col-12 text-center" role="alert">
+            liste des erreurs :
+            <?php foreach ($errors as $error) {
+                echo $error ?>
+                |
+            <?php } ?>
+        </div>
+    <?php } ?>
+
     <section class="mt-4">
         <div class="row justify-content-center">
             <div class="card border-dark mb-3">
@@ -179,7 +189,7 @@ require '../Controllers/updateApprenant_traitement.php';
             </div>
     </section>
 
-    <footer>
+    <footer class="fixed-bottom">
         <?php include 'footer.php' ?>
     </footer>
 

@@ -1,5 +1,6 @@
 <?php
 require 'bddLog.php';
+
 if (!empty($_POST) AND isset($_POST)){
     $post = [];
     $errors = [];
@@ -26,10 +27,16 @@ if (!empty($_POST) AND isset($_POST)){
         $errors[] = 'Champ confirmer le mot de passe invalide, le mot de passe doit être identique au premier';
     }
 
+    if (!empty($errors) AND isset($errors)) {
+        $bottomClass=" ";
+    }else{
+        $bottomClass="fixed-bottom";
+    }
+
     if (empty($errors)){
         require '../Model/registration_Insert.php';
         if ($insertUser->execute()){
-            header('Location: accueil.php');
+            header('Location: registration.php');
         }
     }
 

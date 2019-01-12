@@ -26,14 +26,18 @@ session_start();
             <?php } ?>
         </div>
     <?php } ?>
-    <section class="mt-4 container">
-        <div class="d-flex mr-3 justify-content-end">
+
+    <aside class="container">
+        <div class="d-flex mt-4 justify-content-end">
             <!-- Button modal -->
             <button type="button" class="btn bg-success text-white" data-toggle="modal" data-target="#insertAtelier">
                 Ajouter un atelier
             </button>
             <?php require 'modal/modal_insertAtelier.php' ?>
         </div>
+    </aside>
+
+    <section class="mt-3 container">
         <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
             <!--Alpha Francophone-->
             <li class="nav-item">

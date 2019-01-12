@@ -7,7 +7,7 @@ require '../Controllers/registration_traitement.php'
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BDD | Login </title>
+    <title>BDD |  Enregistrer un utilisateur </title>
     <link rel="stylesheet" href="../Vendor/css/bootstrap.min.css">
 </head>
 <body>
@@ -28,7 +28,7 @@ require '../Controllers/registration_traitement.php'
 <section class="d-flex justify-content-center mt-5">
     <div class="card text-center">
         <div class="card-header">
-            Connexion
+            Enregistrer un utilisateur
         </div>
         <form method="post">
             <div class="card-body">
@@ -47,13 +47,13 @@ require '../Controllers/registration_traitement.php'
                 </div>
             </div>
             <div class="card-footer text-muted">
-                <button type="submit" class="btn btn-success">Connexion</button>
+                <button type="submit" class="btn btn-success">Enregistrer</button>
             </div>
         </form>
     </div>
 </section>
 
-<footer class="fixed-bottom">
+<footer class="<?= $bottomClass?>">
   <?php include 'footer.php'?>
 </footer>
 

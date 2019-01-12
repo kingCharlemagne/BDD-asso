@@ -204,8 +204,8 @@ require '../Controllers/statistic_traitement.php'
                                 <?php foreach ($contComptaDatas as $i => $data) { ?>
                                     <p>Nombre de cotisations: <?= $data['count'] ?> </p>
                                     <p>Somme totale des cotisations: <?= $data['somme'] ?> Euros </p>
-                                    <p>Nombre de paiement par chèques: </p>
-                                    <p>Nombre de paiement en espèces: </p>
+                                    <p>Nombre de paiement par chèques: <?= $data['cheque'] ?></p>
+                                    <p>Nombre de paiement en espèces: <?= $data['cash'] ?></p>
                                 <?php } ?>
                             </div>
                         </div>

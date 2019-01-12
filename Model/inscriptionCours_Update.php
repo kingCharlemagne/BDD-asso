@@ -7,4 +7,4 @@ $inscriptionSecondStep->bindValue(':nRecu',htmlspecialchars($_POST['receved']));
 $inscriptionSecondStep->bindValue(':paiement',htmlspecialchars($_POST['payment_type']));
 $inscriptionSecondStep->bindValue(':montant',htmlspecialchars($_POST['money']));
 $inscriptionSecondStep->bindValue(':date',date('Y-m-d'));
-$inscriptionSecondStep->bindValue(':id',$_SESSION['id_student']);
+$inscriptionSecondStep->bindValue(':id',$_SESSION['id_apprenant']);

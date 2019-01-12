@@ -31,7 +31,7 @@ require '../Controllers/deconnexion_traitement.php'
             <ul class="navbar-nav">
                 <?php if ($_SESSION['role'] == 'ROLE_ADMIN'){ ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="registration.php">Ajouter un utilisateur</a>
+                    <a class="nav-link" href="usersManagement.php">Gestion des utilisateurs</a>
                 </li>
                 <?php } ?>
                 <li class="nav-item">

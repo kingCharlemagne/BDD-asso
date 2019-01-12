@@ -8,13 +8,6 @@ function typeSearch() {
     document.getElementById('searchInput').setAttribute('type','search');
 }
 
-function deleteApprenant(idApprenant) {
-    let conf=confirm("Confirmer pour supprimer l'apprenant");
-
-    if (conf===true) {
-        document.location.href="recherche.php?id="+idApprenant;
-    }
-}
 
 function printFile() {
     let documentPrint= document.getElementById('printFile');
@@ -69,5 +62,15 @@ function selectLevel(id) {
         blockPayment.style.display = "block";
         blockAlpha.style.display = "none";
         blockInt.style.display = "none";
+    }
+}
+
+//////////////////////////////////////////usersManagement//////////////////////////////////////////////////////
+
+function deleteUser(idUser) {
+    let conf=confirm("Confirmer pour supprimer l'atelier");
+
+    if (conf===true) {
+        document.location.href="usersManagement.php?deleteId="+idUser;
     }
 }
