@@ -10,14 +10,14 @@
     </div>
 
     <div class="">
-        <img src="" alt="">
+        <img src="" alt="logo asso">
     </div>
     
     <div class="">
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="listAteliers.php">Atelier</a></li>
+            <li class="list-inline-item"><a href="listAteliers.php">Ateliers</a></li>
             <li class="list-inline-item"><a href="recherche.php">Recherche</a></li>
-            <li class="list-inline-item"><a href="statistic.php">Statistique</a></li>
+            <li class="list-inline-item"><a href="statistic.php">Statistiques</a></li>
 
         </ul>
     </div>

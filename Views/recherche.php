@@ -28,6 +28,7 @@ require '../Controllers/recherche_traitement.php'
                         <option onclick="typeSearch()" value="2">Id</option>
                         <option onclick="typeDate()" value="3">Date de naissance</option>
                         <option onclick="typeSearch()" value="4">Téléphone</option>
+                        <option onclick="typeDate()" value="5">Date d'inscription</option>
                     </select>
                 </div>
                 <input class="form-control mr-sm-2" type="search" name="search" id="searchInput" aria-label="Search"

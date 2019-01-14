@@ -33,7 +33,7 @@ require '../Controllers/logSessionUser.php';
         <div class="row justify-content-around text-center">
 
             <div class="card bg-light mb-3" style="width: 18rem;">
-                <div class="card-header">Inscription apprenant</div>
+                <div class="card-header">Inscription</div>
                 <div class="card-body">
                     <img src="../Vendor/img/plus-40.png" width="40" height="40" alt="icone inscription">
                     <br>
@@ -43,7 +43,7 @@ require '../Controllers/logSessionUser.php';
 
 
             <div class="card text-white bg-info mb-3" style="width: 18rem;">
-                <div class="card-header">Liste des ateliers</div>
+                <div class="card-header">Ateliers</div>
                 <div class="card-body">
                     <img src="../Vendor/img/atelier-50.png" width="40" height="40" alt="icone liste des ateliers">
                     <br>
@@ -52,7 +52,7 @@ require '../Controllers/logSessionUser.php';
             </div>
 
             <div class="card text-white bg-warning mb-3" style="width: 18rem;">
-                <div class="card-header">Moteur de recherche</div>
+                <div class="card-header">Recherche</div>
                 <div class="card-body">
                     <img src="../Vendor/img/recherche-50.png" width="40" height="40" alt="icone recherche">
                     <br>

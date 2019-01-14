@@ -58,13 +58,16 @@ require '../Controllers/model_registedData_traitement.php';
             <div class="col-2">
                 <div class="row text-center">
                     <div class="col mt-2 ">
-                        <a href="inscriptionFile.php?id=<?= $data['id'] ?>" class="btn btn-info" style="display: block">Fiche d'inscription</a>
+                        <a href="inscriptionFile.php?id=<?= $data['id'] ?>" class="btn btn-outline-primary">Fiche d'inscription</a>
                     </div>
                     <div class="col mt-2 ">
-                        <a href="updateApprenant.php?id=<?= $data['id'] ?>"  class="btn btn-success" style="display: block">Changer d'atelier</a>
+                        <a href="updateApprenant.php?id=<?= $data['id'] ?>"  class="btn btn-outline-success">Changer d'atelier</a>
                     </div>
-                    <div class="col mt-5">
-                        <button class="btn btn-info" type="button" data-toggle="collapse"
+                    <div class="col mt-2 ">
+                        <a href="reinstatement.php?id=<?= $data['id'] ?>"  class="btn btn-outline-danger">Réinscription</a>
+                    </div>
+                    <div class="col mt-3">
+                        <button class="btn btn-outline-info" type="button" data-toggle="collapse"
                                 data-target="#<?= $data['name'] . $data['id'] ?>" aria-expanded="true"
                                 aria-controls="<?= $data['name'] . $data['id'] ?>">
                             Détail

@@ -4,12 +4,6 @@ require 'bddLog.php';
 if (!empty($_GET) AND isset($_GET)) {
 
     if (isset($_GET['selectCategorie']) AND isset($_GET['search'])){
-    $get=[];
-
-    // Nettoyage des inputs
-    foreach ($_GET as $key=>$value){
-        $get[$key]= htmlspecialchars(trim($value));
-    }
 
     if ($_GET['selectCategorie']==="0"){
         $categorie="name";
@@ -24,6 +18,9 @@ if (!empty($_GET) AND isset($_GET)) {
     }
     elseif ($_GET['selectCategorie']==="4"){
         $categorie="phone";
+    }
+    elseif ($_GET['selectCategorie']==="5"){
+        $categorie="create_at";
     }
 
     $search=$_GET['search'];

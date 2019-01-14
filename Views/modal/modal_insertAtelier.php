@@ -33,7 +33,7 @@
                     <label for="atelier">Atelier</label>
                     <input type="text" class="form-control" id="atelier" name="atelier" required>
 
-                    <label for="adresseAtelier">adresse</label>
+                    <label for="adresseAtelier">Adresse</label>
                     <textarea class="form-control" id="adresseAtelier" rows="1" name="address"></textarea>
 
 
