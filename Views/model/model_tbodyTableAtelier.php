@@ -1,8 +1,7 @@
 <tr>
-    <th scope="row"><?= $data['atelier'] ?></th>
+    <th scope="row" class="btn-link"><a href="listApprenantAtelier.php?id=<?= $data['id'] ?>"><?= $data['atelier'] ?></a></th>
     <td><?= $data['horaire_debut'] ?></td>
     <td><?= $data['horaire_fin'] ?></td>
-    <td><?= $data['effectif'] ?></td>
     <td>
         <?php
         $color="success";
