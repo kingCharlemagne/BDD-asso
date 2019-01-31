@@ -38,21 +38,8 @@ require '../Controllers/listApprenantAtelier_traitement.php ';
             <p>liste des Apprenants:</p>
         </div>
         <div class="border-left border-dark col-10">
-            <?php foreach ($apprenantList as $data) { ?>
-                <div class="card mt-2 <?php switch ($data['abs']) {
-                    case "0":
-                        echo "border-success";
-                        break;
-                    case "1":
-                        echo "border-primary";
-                        break;
-                    case "2":
-                        echo "border-warning";
-                        break;
-                    case "3":
-                        echo "border-danger";
-                        break;
-                } ?>">
+            <?php foreach ($apprenantList as $data) { $table=lessonPosition($data['first_lesson'],$data['second_lesson'],$data['last_lesson']); ?>
+                <div class="card mt-2">
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col">
@@ -68,15 +55,8 @@ require '../Controllers/listApprenantAtelier_traitement.php ';
                                 <address class="font-italic"><?= $data['city'] . " " . $data['cp'] ?></address>
                             </div>
                             <div class="col">
-                                <h6 class="font-weight-bold">Absence</h6>
-                                <p><?= $data['abs']?></p>
-                            </div>
-                            <div class="col">
-                                <div class="mb-1">
-                                    <a href="listApprenantAtelier.php?id=<?=$atelierSelect ['id']?>&idApp=<?= $data['id']?>&nbAbs=<?= $data['abs']?> " class="btn btn-warning"> ABS</a>
-                                </div>
                                 <div>
-                                    <a href="listApprenantAtelier.php?idApp=<?= $data['id']?>&idAtl=<?= $atelierSelect['id']?> " class="btn btn-danger <?= $disabled ?>">Supprimer</a>
+                                    <a href="listApprenantAtelier.php?idApp=<?= $data['id']?>&table=<?= $table?> " class="btn btn-danger">Retirer du cours</a>
                                 </div>
                             </div>
                         </div>

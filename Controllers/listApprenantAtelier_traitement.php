@@ -1,37 +1,36 @@
 <?php
 require 'bddLog.php';
 
-$disabled = "disabled";// à programmer si >= 3 abs plus de disabled
 
+if (isset($_GET)) {
     require '../Model/listApprenantAtelier_Select.php';
 
-//update
+    function lessonPosition($a1,$a2,$a3){
+        if ($_GET['id']===$a1){
+            return 'first_lesson';
+        }elseif ($_GET['id']===$a2){
+            return 'second_lesson';
+        }elseif ($_GET['id']===$a3){
+            return 'last_lesson';
+        }
+    }
 
-if (isset($_GET['id']) AND isset($_GET['idApp']) AND isset($_GET['nbAbs'])){
-    switch ($_GET['nbAbs']) {
-        case "0":
-            $_GET['nbAbs'] = "1";
-            break;
-        case "1":
-            $_GET['nbAbs'] = "2";
-            break;
-        case "2":
-            $_GET['nbAbs'] = "3";
-            break;
+    //Update
+    if (isset($_GET['idApp']) AND isset($_GET['table'])) {
+        $get=[];
+        foreach ($_GET as $key=>$value){
+            $get[$key]=strip_tags(trim($value));
+        }
+        require '../Model/listApprenantAtelier_Update.php';
+        if ($deleteAtelier->execute()) {
+            header("location:" . $_SERVER['HTTP_REFERER']);
+        }
     }
-    require '../Model/listApprenantAtelier_Update.php';
-    if ($absUpdate->execute()){
-        header("Location:".  $_SERVER['HTTP_REFERER']);
-    }
+
 }
+
+
 
 //delete
-if (isset($_GET['idApp']) AND isset($_GET['idAtl']) AND !empty($_GET['idApp']) AND !empty($_GET['idAtl']) AND is_numeric($_GET['idApp'])AND is_numeric($_GET['idAtl'])){
 
-    require '../Model/listApprenantAtelier_Delete.php';
-
-    if ($listApprenant->execute()){
-
-    }
-}
 
