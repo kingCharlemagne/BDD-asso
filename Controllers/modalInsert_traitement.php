@@ -4,7 +4,7 @@ if (!empty($_POST) AND isset($_POST)){
     $post=[];
 
     foreach ($_POST as $key=>$value){
-        $post[$key]= htmlspecialchars(trim($value));
+        $post[$key]= strip_tags(trim($value));
     }
 
     //categorie

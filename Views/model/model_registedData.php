@@ -1,5 +1,5 @@
 <?php
-require '../Controllers/model_registedData_traitement.php';
+require_once '../Controllers/model_registedData_traitement.php';
 ?>
 
 
@@ -16,7 +16,7 @@ require '../Controllers/model_registedData_traitement.php';
                 <div class="row text-center">
                     <div class="col">
                         <h6>Niveau:</h6>
-                        <p class="text-uppercase"><?= $data['categorie'] ?></p>
+                        <p class="text-uppercase"><?= categorie($data['catA1'],$data['catA2'],$data['catA3']) ?></p>
                     </div>
                 </div>
             </div>
@@ -45,10 +45,10 @@ require '../Controllers/model_registedData_traitement.php';
                 </div>
                 <div class="row text-center">
                     <div class="col">
-                        <p>Téléphone: <?= $data['phone'] ?></p>
+                        <p>Téléphone: <?= issetValue($data['phone']) ?></p>
                     </div>
                     <div class="col">
-                        <p>E-mail: <?= $data['email'] ?></p>
+                        <p>E-mail: <?= issetValue($data['email'] )?></p>
                     </div>
                     <div class="col">
                         <p>Date d'inscription: <?= $data['create_at'] ?></p>

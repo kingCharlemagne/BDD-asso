@@ -19,10 +19,11 @@ require '../Controllers/statistic_traitement.php'
 
         <nav class="navbar navbar-light bg-light justify-content-center mb-3">
             <form class="form-inline" method="get">
-                <label for="searchInput" class="mr-2">Saisire l'année ou le mois recherché</label>
+                <label for="searchInput" class="mr-2">Saisir l'année ou le mois recherché</label>
                 <input class="form-control mr-sm-2" type="search" name="searchDate" id="searchInput"
                        aria-label="Search" placeholder="Format aaaa-mm-jj Ex:(2018-05)" required>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+                <a href="statistic.php" class="btn btn-outline-danger ml-2">Reset</a>
             </form>
         </nav>
         <div class="row">
@@ -54,10 +55,8 @@ require '../Controllers/statistic_traitement.php'
                         <div class="row">
                             <div class="col">
                                 <?php foreach ($contInscriptionDatas as $i => $data) { ?>
-                                    <p>Apprenant inscrit: <?= $data['count'] ?></p>
-                                <?php } ?>
-                                    </tbody>
-                                </table>
+                                <p>Apprenant inscrit: <?= $data['count'] ?></p>
+                                <?php }?>
                             </div>
                         </div>
                     </div>
@@ -202,21 +201,27 @@ require '../Controllers/statistic_traitement.php'
                         <div class="row">
                             <div class="col">
                                 <?php foreach ($contComptaDatas as $data) { ?>
-                                    <h6>Générale</h6>
-                                    <p>Nombre totale des cotisations: <?= $data['count'] ?> </p>
-                                    <p>Somme totale des cotisations: <?= $data['somme'] ?> Euros </p>
+                                    <h6 class="text-uppercase">Générale:</h6>
+                                    <ul>
+                                        <li>Nombre totale des cotisations: <?= $data['count'] ?></li>
+                                        <li>Somme totale des cotisations: <?= $data['somme'] ?> Euros </li>
+                                    </ul>
                                 <?php } ?>
                                     <hr>
                                 <?php foreach ($contComptaChequeDatas as $data) { ?>
-                                    <h6>Paiement par cheque</h6>
-                                    <p>Nombre de paiement par chèques: <?= $data['count'] ?></p>
-                                    <p>Somme totale des paiements par chèques: <?= $data['somme'] ?> Euros </p>
+                                    <h6 class="text-uppercase">Paiement par cheque:</h6>
+                                    <ul>
+                                        <li>Nombre de paiement par chèques: <?= $data['count'] ?></li>
+                                        <li>Somme totale des paiements par chèques: <?= $data['somme'] ?> Euros</li>
+                                    </ul>
                                 <?php } ?>
                                     <hr>
                                 <?php foreach ($contComptaCashDatas as $data) { ?>
-                                    <h6>Paiement en espèces</h6>
-                                    <p>Nombre de paiement en espèces: <?= $data['count'] ?></p>
-                                    <p>Somme totale des paiements en espèces: <?= $data['somme'] ?> Euros </p>
+                                    <h6 class="text-uppercase">Paiement en espèces:</h6>
+                                    <ul>
+                                        <li>Nombre de paiement en espèces: <?= $data['count'] ?></li>
+                                        <li>Somme totale des paiements en espèces: <?= $data['somme'] ?> Euros </li>
+                                    </ul>
                                 <?php } ?>
                             </div>
                         </div>

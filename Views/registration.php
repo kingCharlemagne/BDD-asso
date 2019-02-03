@@ -43,7 +43,7 @@ require '../Controllers/registration_traitement.php'
                 </div>
                 <div class="form-group">
                     <label for="password">Confirmer le mot de passe</label>
-                    <input type="password" class="form-control" id="confPassword" name="confPassword" placeholder="Mot de passe identique au premier" required>
+                    <input type="password" class="form-control" id="confPassword" name="confPassword" placeholder="Identique au premier" required>
                 </div>
             </div>
             <div class="card-footer text-muted">

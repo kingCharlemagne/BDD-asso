@@ -5,7 +5,7 @@ if (isset($_POST) AND !empty($_POST)){
     $errors =[];
 
     foreach ($_POST as $key=>$value){
-        $post[$key]=htmlspecialchars($value);
+        $post[$key]=strip_tags($value);
     }
 
     if (!isset($_POST['pseudo']) OR empty($post['pseudo'])){

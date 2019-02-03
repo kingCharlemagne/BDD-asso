@@ -1,4 +1,16 @@
 <?php
+
+function issetValue($val)
+{
+    if (empty($val)) {
+        return "Données absentent";
+    } else {
+        return $val;
+    }
+}
+
+
+
 $dateNow=date('Ymd');
 
 $dateExpiration= $data['create_at'];

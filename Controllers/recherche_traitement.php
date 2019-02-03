@@ -1,10 +1,25 @@
 <?php
 require 'bddLog.php';
 
+$disabled="disabled";
+$fixFooter="fixed-bottom";
+
+function categorie($cat1,$cat2,$cat3){
+    if ($cat1!= "null"){
+        return $cat1;
+    }elseif ($cat2!= "null"){
+        return $cat2;
+    }elseif ($cat3!= "null"){
+        return $cat3;
+    }else{
+        return "Aucun niveau définie";
+    }
+}
+
 if (!empty($_GET) AND isset($_GET)) {
-
     if (isset($_GET['selectCategorie']) AND isset($_GET['search'])){
-
+        $disabled="";
+        $fixFooter="";
     if ($_GET['selectCategorie']==="0"){
         $categorie="name";
     }elseif ($_GET['selectCategorie']==="1"){
@@ -24,7 +39,7 @@ if (!empty($_GET) AND isset($_GET)) {
     }
 
     $search=$_GET['search'];
-    require '../Model/recherche_Select.php';
+    require '../Model/recherche_Search.php';
 
     }
 

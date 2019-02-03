@@ -34,6 +34,7 @@ require '../Controllers/recherche_traitement.php'
                 <input class="form-control mr-sm-2" type="search" name="search" id="searchInput" aria-label="Search"
                        required>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
+                <a href="recherche.php" class="btn btn-outline-danger ml-2 <?=$disabled?>">Reset</a>
             </form>
         </nav>
 
@@ -42,12 +43,12 @@ require '../Controllers/recherche_traitement.php'
                 foreach ($results as $data) {
                     require 'model/model_registedData.php';
                 }
-            } ?>
+            }?>
         </div>
     </div>
 </section>
 
-<footer>
+<footer class="<?= $fixFooter?>">
     <?php include 'footer.php' ?>
 </footer>
 <script src="../Vendor/jquery/dist/jquery.min.js"></script>

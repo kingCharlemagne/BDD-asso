@@ -47,8 +47,8 @@ require '../Controllers/listApprenantAtelier_traitement.php ';
                                 <p><?= $data['surname'] ?></p>
                             </div>
                             <div class="col">
-                                <p><?php if (empty($data ['email'])){echo "Email absent";}else{echo $data ['email'];}?></p>
-                                <p><?php if (empty($data ['phone'])){echo "Téléphone absent";}else{echo $data ['phone'];}?></p>
+                                <p><?= issetMail($data ['email'])?></p>
+                                <p><?=issetPhone($data ['phone']) ?></p>
                             </div>
                             <div class="col">
                                 <address class="font-italic"><?= $data['address'] ?></address>
